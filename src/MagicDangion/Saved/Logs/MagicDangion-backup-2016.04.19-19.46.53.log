@@ -1,0 +1,673 @@
+﻿Log file open, 04/19/16 18:59:38
+LogInit:Display: Running engine for game: MagicDangion
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(444217035) SRandInit(444217036).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.060710
+LogInit: Version: 4.11.1-2934540+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr  6 2016 02:14:16
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.04.19-09.59.38:506][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.19-09.59.38:506][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.04.19-09.59.38:516][  0]LogInit: Computer: LIGHT
+[2016.04.19-09.59.38:516][  0]LogInit: User: EllightDunois
+[2016.04.19-09.59.38:516][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.04.19-09.59.38:516][  0]LogInit: High frequency timer resolution =3.906242 MHz
+[2016.04.19-09.59.38:516][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.04.19-09.59.38:516][  0]LogMemory: Platform Memory Stats for Windows
+[2016.04.19-09.59.38:516][  0]LogMemory: Process Physical Memory: 313.64 MB used, 313.64 MB peak
+[2016.04.19-09.59.38:516][  0]LogMemory: Process Virtual Memory: 314.91 MB used, 314.91 MB peak
+[2016.04.19-09.59.38:516][  0]LogMemory: Physical Memory: 3532.99 MB used, 8133.65 MB total
+[2016.04.19-09.59.38:516][  0]LogMemory: Virtual Memory: 652.91 MB used, 134217728.00 MB total
+[2016.04.19-09.59.38:538][  0]LogTextLocalizationManager: No specific translations for ('ja-JP') exist, so ('ja') translations will be used.
+[2016.04.19-09.59.38:601][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:false):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (816077464) Localized String: (偽)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (816077464) Localized String: (false)
+[2016.04.19-09.59.38:601][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:true):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-942328987) Localized String: (真)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (-942328987) Localized String: (true)
+[2016.04.19-09.59.38:601][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (再生が最後まで終わった後、ロープ再生するようにしますか？)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2133979316) Localized String: (ループが最後まで到達した時に、アニメーションのループを継続するべきか？)
+[2016.04.19-09.59.38:601][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースで値を取得するX座標)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースでサンプリングするX座標)
+[2016.04.19-09.59.38:601][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースで値を取得するY座標)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースでサンプリングするY座標)
+[2016.04.19-09.59.38:601][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースで値を取得するZ座標)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースでサンプリングするZ座標)
+[2016.04.19-09.59.38:601][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (再生するブレンドスペースのアセット)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1599043277) Localized String: (再生するブレンド空間アセット)
+[2016.04.19-09.59.38:601][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (このマシーンで1フレームあたりに同時に処理できるトランジションの最大数)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1567650430) Localized String: (単一フレームでマシーンが「同時」に受け取れる遷移の最大数)
+[2016.04.19-09.59.38:601][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (再生速度の倍率です。負の数値も使う事ができます。その場合逆再生になります。)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (再生レート乗数。アニメーションを逆再生する負の値にすることができます。)
+[2016.04.19-09.59.38:712][  0]LogD3D11RHI: D3D11 adapters:
+[2016.04.19-09.59.38:720][  0]LogD3D11RHI:    0. 'AMD Radeon R9 200 Series' (Feature Level 11_0)
+[2016.04.19-09.59.38:720][  0]LogD3D11RHI:       4074MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 1 output[s]
+[2016.04.19-09.59.38:721][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.04.19-09.59.38:721][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 0 output[s]
+[2016.04.19-09.59.38:721][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.04.19-09.59.38:724][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.04.19-09.59.38:724][  0]LogD3D11RHI:     Adapter Name: AMD Radeon R9 200 Series
+[2016.04.19-09.59.38:724][  0]LogD3D11RHI:   Driver Version: Catalyst 15.8 (internal 16.150.2211.0)
+[2016.04.19-09.59.38:724][  0]LogD3D11RHI:      Driver Date: 3-21-2016
+[2016.04.19-09.59.38:724][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.04.19-09.59.38:729][  0]LogD3D11RHI: Async texture creation disabled: no driver support
+[2016.04.19-09.59.38:739][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Intermediate/Shaders/WorkingDirectory/10060/).
+[2016.04.19-09.59.38:739][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/ELLIGH~1/AppData/Local/Temp/UnrealShaderWorkingDir/629590BC40C11153933BEC87CB54E180/'.
+[2016.04.19-09.59.38:739][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.04.19-09.59.39:762][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.04.19-09.59.39:764][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.04.19-09.59.39:767][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.04.19-09.59.39:771][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.04.19-09.59.39:774][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.04.19-09.59.39:778][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.04.19-09.59.39:780][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.04.19-09.59.39:782][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.04.19-09.59.39:784][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.04.19-09.59.39:786][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.04.19-09.59.39:788][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.04.19-09.59.39:792][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.04.19-09.59.39:792][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.04.19-09.59.39:792][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.04.19-09.59.39:808][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.04.19-09.59.39:810][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.04.19-09.59.39:812][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.04.19-09.59.39:814][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.04.19-09.59.39:817][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.04.19-09.59.39:817][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.04.19-09.59.39:858][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.04.19-09.59.39:892][  0]LogDerivedDataCache: Loaded boot cache 0.03s 46MB C:/Users/EllightDunois/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.04.19-09.59.39:892][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/EllightDunois/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.04.19-09.59.39:892][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.04.19-09.59.39:892][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.04.19-09.59.39:892][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.04.19-09.59.39:892][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.04.19-09.59.39:905][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.04.19-09.59.39:916][  0]LogDerivedDataCache: Using Local data cache path C:/Users/EllightDunois/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.04.19-09.59.40:469][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.19-09.59.40:469][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.04.19-09.59.40:523][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.04.19-09.59.40:611][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.04.19-09.59.40:611][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.04.19-09.59.40:611][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.04.19-09.59.40:907][  0]LogUObjectArray: 27678 objects as part of root set at end of initial load.
+[2016.04.19-09.59.40:907][  0]LogUObjectAllocator: 5591392 out of 0 bytes used by permanent object pool.
+[2016.04.19-09.59.40:907][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.04.19-09.59.40:911][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.04.19-09.59.40:976][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.04.19-09.59.40:976][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.04.19-09.59.41:072][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.19-09.59.41:072][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.19-09.59.41:072][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.19-09.59.41:072][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.19-09.59.41:072][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.19-09.59.41:072][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.19-09.59.41:644][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.04.19-09.59.41:779][  0]LogAssetRegistry: FAssetRegistry took 0.0211 seconds to start up
+[2016.04.19-09.59.41:923][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.04.19-09.59.41:986][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.04.19-09.59.41:991][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.04.19-09.59.41:994][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.04.19-09.59.42:103][  0]LogEngine: Initializing Engine...
+[2016.04.19-09.59.42:117][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.04.19-09.59.42:117][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.04.19-09.59.42:249][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.04.19-09.59.42:253][  0]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.04.19-09.59.42:257][  0]LogInit: FAudioDevice initialized.
+[2016.04.19-09.59.42:276][  0]LogDerivedDataCache: Saved boot cache 0.02s 46MB C:/Users/EllightDunois/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.04.19-09.59.42:281][  0]LogInit: Texture streaming: Enabled
+[2016.04.19-09.59.42:293][  0]LogInit: Transaction tracking system initialized
+[2016.04.19-09.59.42:305][  0]BlueprintLog: New page: エディタの読み込み
+[2016.04.19-09.59.42:342][  0]LocalizationService: 情報 ローカライズのサービスが無効になりました
+[2016.04.19-09.59.42:401][  0]LogConsoleResponse:Display: 
+[2016.04.19-09.59.42:583][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.04.19-09.59.42:583][  0]LogCook:Display: Mobile HDR setting 1
+[2016.04.19-09.59.42:583][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.04.19-09.59.42:614][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/' took 0.01s
+[2016.04.19-09.59.42:614][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.04.19-09.59.42:756][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-09.59.42:756][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-09.59.45:132][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-09.59.45:132][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-09.59.45:134][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-09.59.45:134][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-09.59.46:196][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-09.59.46:196][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-09.59.46:198][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-09.59.46:198][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-09.59.46:218][  0]Cmd: MAP LOAD FILE="../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/tes.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.04.19-09.59.46:218][  0]LightingResults: New page: ライティングのビルド
+[2016.04.19-09.59.46:220][  0]MapCheck: New page: マップをチェック
+[2016.04.19-09.59.46:220][  0]LightingResults: New page: <何も選択されていません>
+[2016.04.19-09.59.46:621][  0]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Sphere' in BlueprintGeneratedClass 'REINST_Fire_small_BP_C_48' (it may have been removed)
+[2016.04.19-09.59.46:673][  0]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Sphere' in BlueprintGeneratedClass 'REINST_Attack_BP_C_57' (it may have been removed)
+[2016.04.19-09.59.47:570][  0]LogAIModule: Creating AISystem for world tes
+[2016.04.19-09.59.47:650][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.04.19-09.59.47:651][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.04.19-09.59.47:694][  0]MapCheck: 情報 マップチェックが完了: 0 エラー、 0 警告、完了に 42.561ミリ秒かかりました。
+[2016.04.19-09.59.47:694][  0]LogFileHelpers: Loading map 'tes' took 1.476
+[2016.04.19-09.59.47:757][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//SplashScreenThread///Thread_388_0///####STATCAT_Advanced#### old //STATGROUP_Threads//SplashScreenThread///Thread_24d0_0///####STATCAT_Advanced####
+[2016.04.19-09.59.47:757][  0]LogCollectionManager: Loaded 0 collections in 0.000892 seconds
+[2016.04.19-09.59.47:795][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Saved/Collections/' took 0.01s
+[2016.04.19-09.59.47:795][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/Developers/EllightDunois/Collections/' took 0.01s
+[2016.04.19-09.59.47:795][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/Collections/' took 0.01s
+[2016.04.19-09.59.47:795][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.04.19-09.59.47:800][  0]LogContentBrowser: Native class hierarchy populated in 0.0048 seconds. Added 1980 classes and 345 folders.
+[2016.04.19-09.59.47:802][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.04.19-09.59.47:802][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.04.19-09.59.47:803][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0003 seconds. Added 12 classes and 0 folders.
+[2016.04.19-09.59.47:805][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2016.04.19-09.59.47:811][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2016.04.19-09.59.47:922][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.04.19-09.59.48:010][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.04.19-09.59.48:014][  0]LogUObjectGlobals:Warning: オブジェクト 'Class なし.' が見つかりませんでした
+[2016.04.19-09.59.48:037][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2016.04.19-09.59.48:038][  0]LogLoad: Full Startup: 10.12 seconds (BP compile: 0.19 seconds)
+[2016.04.19-09.59.48:038][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.04.19-09.59.48:038][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.04.19-09.59.48:048][  0]LogOcInput: OculusInput pre-init called
+[2016.04.19-09.59.48:062][  0]LogAssetRegistry: Asset discovery search completed in 6.3039 seconds
+[2016.04.19-09.59.48:062][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.04.19-09.59.48:062][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000012 seconds (updated 0 objects)
+[2016.04.19-09.59.48:118][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.04.19-09.59.48:232][  0]LogRenderer: Reallocating scene render targets to support 2248x884 (Frame:2).
+[2016.04.19-09.59.56:726][742]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 108 classes and 0 folders.
+[2016.04.19-10.01.27:779][609]BlueprintLog: New page: ButtoleUI をコンパイル
+[2016.04.19-10.01.27:800][609]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.01.27:800][609]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_0) Not registered. Aborting.
+[2016.04.19-10.01.27:899][609]BlueprintEditorCompileResults: 情報 [0109.98] ButtoleUI のコンパイルに成功しました！  [ 119 ミリ秒]
+[2016.04.19-10.01.35:356][365]BlueprintLog: New page: MagicIcon_BP をコンパイル
+[2016.04.19-10.01.35:436][365]BlueprintEditorCompileResults: 情報 [0117.52] MagicIcon_BP のコンパイルに成功しました！  [ 80 ミリ秒]
+[2016.04.19-10.01.49:032][746]BlueprintLog: New page: MagicIcon_BP をコンパイル
+[2016.04.19-10.01.49:107][746]BlueprintEditorCompileResults: 情報 [0131.19] MagicIcon_BP のコンパイルに成功しました！  [ 75 ミリ秒]
+[2016.04.19-10.02.13:898][396]BlueprintLog: New page: MagicIcon_BP をコンパイル
+[2016.04.19-10.02.13:978][396]BlueprintEditorCompileResults: 情報 [0156.06] MagicIcon_BP のコンパイルに成功しました！  [ 79 ミリ秒]
+[2016.04.19-10.02.32:869][440]BlueprintLog: New page: MagicIcon_BP をコンパイル
+[2016.04.19-10.02.32:938][440]BlueprintEditorCompileResults: 情報 [0175.02] MagicIcon_BP のコンパイルに成功しました！  [ 69 ミリ秒]
+[2016.04.19-10.02.53:496][499]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.04.19-10.02.53:804][515]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.04.19-10.02.54:265][556]BlueprintLog: New page: ButtoleUI をコンパイル
+[2016.04.19-10.02.54:345][556]BlueprintEditorCompileResults: 情報 [0196.43] ButtoleUI のコンパイルに成功しました！  [ 80 ミリ秒]
+[2016.04.19-10.03.00:995][174]BlueprintLog: New page: MagicIcon_BP をコンパイル
+[2016.04.19-10.03.01:080][174]BlueprintEditorCompileResults: 情報 [0203.16] MagicIcon_BP のコンパイルに成功しました！  [ 85 ミリ秒]
+[2016.04.19-10.03.21:466][147]BlueprintLog: New page: MagicIcon_BP をコンパイル
+[2016.04.19-10.03.21:551][147]BlueprintEditorCompileResults: 情報 [0223.63] MagicIcon_BP のコンパイルに成功しました！  [ 84 ミリ秒]
+[2016.04.19-10.03.36:571][722]BlueprintLog: New page: MagicIcon_BP をコンパイル
+[2016.04.19-10.03.36:657][722]BlueprintEditorCompileResults: 情報 [0238.74] MagicIcon_BP のコンパイルに成功しました！  [ 85 ミリ秒]
+[2016.04.19-10.05.01:491][682]BlueprintLog: New page: ButtoleUI をコンパイル
+[2016.04.19-10.05.01:574][682]BlueprintEditorCompileResults: 情報 [0323.65] ButtoleUI のコンパイルに成功しました！  [ 83 ミリ秒]
+[2016.04.19-10.05.09:737][470]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.05.09:737][470]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.19-10.05.09:737][470]PIE: New page: PIEセッション: tes (2016/04/20 4:05:09)
+[2016.04.19-10.05.09:738][470]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.04.19-10.05.09:740][470]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002555s)
+[2016.04.19-10.05.09:741][470]LogAIModule: Creating AISystem for world tes
+[2016.04.19-10.05.09:741][470]LogPlayLevel: PIE: World Init took: (0.000552s)
+[2016.04.19-10.05.09:741][470]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.003282s)
+[2016.04.19-10.05.09:756][470]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.04.19-10.05.09:759][470]LogInit: FAudioDevice initialized.
+[2016.04.19-10.05.09:805][470]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.04.19-10.05.09:807][470]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.04.19-19.05.09
+[2016.04.19-10.05.09:807][470]LogWorld: Bringing up level for play took: 0.001899
+[2016.04.19-10.05.09:810][470]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 9 classes and 0 folders.
+[2016.04.19-10.05.09:813][470]PIE: 情報 /Game/UEDPIE_0_tes 0.623のプレイ イン エディタの開始時間
+[2016.04.19-10.05.09:813][470]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.05.09:908][471]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 409/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.05.11:466][657]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.05.11:539][657]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.05.11:638][659]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.05.13:720][765]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.06.06:652][183]BlueprintLog: New page: Marisa_BP をコンパイル
+[2016.04.19-10.06.06:783][183]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.06.06:881][183]BlueprintEditorCompileResults: 情報 [0388.96] Marisa_BP のコンパイルに成功しました！  [ 228 ミリ秒]
+[2016.04.19-10.07.11:129][708]BlueprintLog: New page: Marisa_BP をコンパイル
+[2016.04.19-10.07.11:260][708]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.07.11:353][708]BlueprintEditorCompileResults: 情報 [0453.43] Marisa_BP のコンパイルに成功しました！  [ 223 ミリ秒]
+[2016.04.19-10.07.13:172][868]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.07.13:172][868]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.19-10.07.13:172][868]PIE: New page: PIEセッション: tes (2016/04/20 4:07:13)
+[2016.04.19-10.07.13:172][868]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.04.19-10.07.13:174][868]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002232s)
+[2016.04.19-10.07.13:175][868]LogAIModule: Creating AISystem for world tes
+[2016.04.19-10.07.13:175][868]LogPlayLevel: PIE: World Init took: (0.000591s)
+[2016.04.19-10.07.13:175][868]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.002995s)
+[2016.04.19-10.07.13:175][868]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.07.13:193][868]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.04.19-10.07.13:196][868]LogInit: FAudioDevice initialized.
+[2016.04.19-10.07.13:224][868]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.04.19-10.07.13:226][868]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.04.19-19.07.13
+[2016.04.19-10.07.13:226][868]LogWorld: Bringing up level for play took: 0.001926
+[2016.04.19-10.07.13:229][868]LogScript:Warning: Accessed None trying to read property buttleUI
+	Marisa_BP_C /Game/UEDPIE_0_tes.tes:PersistentLevel.Marisa_BP_C_15
+	Function /Game/BluePrints/Marisa_BP.Marisa_BP_C:SetHasMagic:0418
+[2016.04.19-10.07.13:229][868]PIE:Error: エラー Blueprint Runtime Error: Accessed None trying to read property buttleUI from function: 'SetHasMagic' from node: Set Magic Icon in graph: SetHasMagic in object: Marisa_BP
+[2016.04.19-10.07.13:229][868]LogScript:Warning: Accessed None trying to read property buttleUI
+	Marisa_BP_C /Game/UEDPIE_0_tes.tes:PersistentLevel.Marisa_BP_C_15
+	Function /Game/BluePrints/Marisa_BP.Marisa_BP_C:SetHasMagic:0418
+[2016.04.19-10.07.13:229][868]PIE:Error: エラー Blueprint Runtime Error: Accessed None trying to read property buttleUI from function: 'SetHasMagic' from node: Set Magic Icon in graph: SetHasMagic in object: Marisa_BP
+[2016.04.19-10.07.13:230][868]PIE: 情報 /Game/UEDPIE_0_tes 0.039のプレイ イン エディタの開始時間
+[2016.04.19-10.07.13:230][868]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.07.14:482][  8]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.07.14:573][  8]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.07.14:679][ 10]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.07.57:147][270]BlueprintLog: New page: Marisa_BP をコンパイル
+[2016.04.19-10.07.57:265][270]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.07.57:352][270]BlueprintEditorCompileResults: 情報 [0499.43] Marisa_BP のコンパイルに成功しました！  [ 204 ミリ秒]
+[2016.04.19-10.08.00:585][533]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.08.00:586][533]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.19-10.08.00:586][533]PIE: New page: PIEセッション: tes (2016/04/20 4:08:00)
+[2016.04.19-10.08.00:586][533]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.04.19-10.08.00:588][533]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002193s)
+[2016.04.19-10.08.00:588][533]LogAIModule: Creating AISystem for world tes
+[2016.04.19-10.08.00:588][533]LogPlayLevel: PIE: World Init took: (0.000478s)
+[2016.04.19-10.08.00:589][533]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.002835s)
+[2016.04.19-10.08.00:589][533]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.08.00:606][533]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.04.19-10.08.00:608][533]LogInit: FAudioDevice initialized.
+[2016.04.19-10.08.00:638][533]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.04.19-10.08.00:640][533]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.04.19-19.08.00
+[2016.04.19-10.08.00:641][533]LogWorld: Bringing up level for play took: 0.001770
+[2016.04.19-10.08.00:643][533]LogScript:Warning: Accessed None trying to read property buttleUI
+	Marisa_BP_C /Game/UEDPIE_0_tes.tes:PersistentLevel.Marisa_BP_C_15
+	Function /Game/BluePrints/Marisa_BP.Marisa_BP_C:SetHasMagic:0418
+[2016.04.19-10.08.00:643][533]PIE:Error: エラー Blueprint Runtime Error: Accessed None trying to read property buttleUI from function: 'SetHasMagic' from node: Set Magic Icon in graph: SetHasMagic in object: Marisa_BP
+[2016.04.19-10.08.00:643][533]LogScript:Warning: Accessed None trying to read property buttleUI
+	Marisa_BP_C /Game/UEDPIE_0_tes.tes:PersistentLevel.Marisa_BP_C_15
+	Function /Game/BluePrints/Marisa_BP.Marisa_BP_C:SetHasMagic:0418
+[2016.04.19-10.08.00:643][533]PIE:Error: エラー Blueprint Runtime Error: Accessed None trying to read property buttleUI from function: 'SetHasMagic' from node: Set Magic Icon in graph: SetHasMagic in object: Marisa_BP
+[2016.04.19-10.08.00:644][533]PIE: 情報 /Game/UEDPIE_0_tes -0.546のプレイ イン エディタの開始時間
+[2016.04.19-10.08.00:644][533]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.08.02:367][732]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.08.02:494][732]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.08.02:596][733]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.08.08:712][174]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.08.12:250][493]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.08.30:637][ 99]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_1) Not registered. Aborting.
+[2016.04.19-10.08.58:396][555]BlueprintLog: New page: Marisa_BP をコンパイル
+[2016.04.19-10.08.58:517][555]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_2) Not registered. Aborting.
+[2016.04.19-10.08.58:607][555]BlueprintEditorCompileResults: 情報 [0560.69] Marisa_BP のコンパイルに成功しました！  [ 210 ミリ秒]
+[2016.04.19-10.09.00:866][756]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.09.00:866][756]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.19-10.09.00:866][756]PIE: New page: PIEセッション: tes (2016/04/20 4:09:00)
+[2016.04.19-10.09.00:866][756]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.04.19-10.09.00:868][756]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002294s)
+[2016.04.19-10.09.00:869][756]LogAIModule: Creating AISystem for world tes
+[2016.04.19-10.09.00:869][756]LogPlayLevel: PIE: World Init took: (0.000465s)
+[2016.04.19-10.09.00:869][756]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.002927s)
+[2016.04.19-10.09.00:869][756]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.09.00:886][756]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.04.19-10.09.00:889][756]LogInit: FAudioDevice initialized.
+[2016.04.19-10.09.00:915][756]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.04.19-10.09.00:917][756]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.04.19-19.09.00
+[2016.04.19-10.09.00:917][756]LogWorld: Bringing up level for play took: 0.001846
+[2016.04.19-10.09.00:920][756]LogScript:Warning: Accessed None trying to read property widget
+	Marisa_BP_C /Game/UEDPIE_0_tes.tes:PersistentLevel.Marisa_BP_C_15
+	Function /Game/BluePrints/Marisa_BP.Marisa_BP_C:SetHasMagic:03EC
+[2016.04.19-10.09.00:920][756]PIE:Error: エラー Blueprint Runtime Error: Accessed None trying to read property widget from function: 'SetHasMagic' from node: Set Magic Icon in graph: SetHasMagic in object: Marisa_BP
+[2016.04.19-10.09.00:920][756]LogScript:Warning: Accessed None trying to read property widget
+	Marisa_BP_C /Game/UEDPIE_0_tes.tes:PersistentLevel.Marisa_BP_C_15
+	Function /Game/BluePrints/Marisa_BP.Marisa_BP_C:SetHasMagic:03EC
+[2016.04.19-10.09.00:920][756]PIE:Error: エラー Blueprint Runtime Error: Accessed None trying to read property widget from function: 'SetHasMagic' from node: Set Magic Icon in graph: SetHasMagic in object: Marisa_BP
+[2016.04.19-10.09.00:921][756]PIE: 情報 /Game/UEDPIE_0_tes -0.27のプレイ イン エディタの開始時間
+[2016.04.19-10.09.00:921][756]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.09.02:281][911]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.09.02:397][911]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.09.02:500][912]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.09.07:998][324]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.09.16:351][ 31]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.04.19-10.09.16:365][ 31]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.09.16:434][ 31]BlueprintEditorCompileResults: 情報 [0578.51] ButtleGameMode_BP のコンパイルに成功しました！  [ 83 ミリ秒]
+[2016.04.19-10.09.19:082][269]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.09.19:082][269]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.19-10.09.19:082][269]PIE: New page: PIEセッション: tes (2016/04/20 4:09:19)
+[2016.04.19-10.09.19:082][269]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.04.19-10.09.19:085][269]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002192s)
+[2016.04.19-10.09.19:085][269]LogAIModule: Creating AISystem for world tes
+[2016.04.19-10.09.19:085][269]LogPlayLevel: PIE: World Init took: (0.000468s)
+[2016.04.19-10.09.19:085][269]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.002822s)
+[2016.04.19-10.09.19:085][269]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.09.19:102][269]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.04.19-10.09.19:105][269]LogInit: FAudioDevice initialized.
+[2016.04.19-10.09.19:135][269]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.04.19-10.09.19:137][269]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.04.19-19.09.19
+[2016.04.19-10.09.19:137][269]LogWorld: Bringing up level for play took: 0.001795
+[2016.04.19-10.09.19:140][269]LogScript:Warning: Accessed None trying to read property widget
+	Marisa_BP_C /Game/UEDPIE_0_tes.tes:PersistentLevel.Marisa_BP_C_21
+	Function /Game/BluePrints/Marisa_BP.Marisa_BP_C:SetHasMagic:03EC
+[2016.04.19-10.09.19:140][269]PIE:Error: エラー Blueprint Runtime Error: Accessed None trying to read property widget from function: 'SetHasMagic' from node: Set Magic Icon in graph: SetHasMagic in object: Marisa_BP
+[2016.04.19-10.09.19:140][269]LogScript:Warning: Accessed None trying to read property widget
+	Marisa_BP_C /Game/UEDPIE_0_tes.tes:PersistentLevel.Marisa_BP_C_21
+	Function /Game/BluePrints/Marisa_BP.Marisa_BP_C:SetHasMagic:03EC
+[2016.04.19-10.09.19:140][269]PIE:Error: エラー Blueprint Runtime Error: Accessed None trying to read property widget from function: 'SetHasMagic' from node: Set Magic Icon in graph: SetHasMagic in object: Marisa_BP
+[2016.04.19-10.09.19:141][269]PIE: 情報 /Game/UEDPIE_0_tes -0.05のプレイ イン エディタの開始時間
+[2016.04.19-10.09.19:141][269]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.09.20:353][405]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.09.20:480][405]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.09.20:593][406]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.09.22:546][506]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.09.39:418][993]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableGet_979.EdGraphPin_47895''
+[2016.04.19-10.09.39:418][993]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_5834.EdGraphPin_46951''
+[2016.04.19-10.09.39:418][993]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableGet_979.EdGraphPin_47895''
+[2016.04.19-10.09.57:743][606]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.04.19-10.09.57:749][606]LogBlueprint:Error: [compiler ButtleGameMode_BP] エラー このブループリントは Marisa_BP_C ではありません。 ' ターゲット ' に接続が必要です。
+[2016.04.19-10.09.57:750][606]LogBlueprint:Error: [compiler ButtleGameMode_BP] エラー このブループリントは Marisa_BP_C ではありません。 ' ターゲット ' に接続が必要です。
+[2016.04.19-10.09.57:752][606]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.09.57:876][606]LogBlueprint:Warning: [compiler ButtleGameMode_BP] 警告 [0619.96] ButtleGameMode_BP のコンパイルに失敗しました。 2 致命的な問題 0 警告 [ 133 ミリ秒]
+[2016.04.19-10.09.57:876][606]BlueprintEditorCompileResults:Error: エラー このブループリントは Marisa_BP_C ではありません。 ' ターゲット ' に接続が必要です。
+[2016.04.19-10.09.57:876][606]BlueprintEditorCompileResults:Error: エラー このブループリントは Marisa_BP_C ではありません。 ' ターゲット ' に接続が必要です。
+[2016.04.19-10.09.57:876][606]BlueprintEditorCompileResults:Warning: 警告 [0619.96] ButtleGameMode_BP のコンパイルに失敗しました。 2 致命的な問題 0 警告 [ 133 ミリ秒]
+[2016.04.19-10.10.09:075][572]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.04.19-10.10.09:086][572]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.10.09:156][572]BlueprintEditorCompileResults: 情報 [0631.24] ButtleGameMode_BP のコンパイルに成功しました！  [ 80 ミリ秒]
+[2016.04.19-10.10.10:958][714]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.10.10:958][714]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.19-10.10.10:958][714]PIE: New page: PIEセッション: tes (2016/04/20 4:10:10)
+[2016.04.19-10.10.10:958][714]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.04.19-10.10.10:961][714]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002131s)
+[2016.04.19-10.10.10:961][714]LogAIModule: Creating AISystem for world tes
+[2016.04.19-10.10.10:961][714]LogPlayLevel: PIE: World Init took: (0.000587s)
+[2016.04.19-10.10.10:961][714]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.002888s)
+[2016.04.19-10.10.10:961][714]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.10.10:978][714]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.04.19-10.10.10:980][714]LogInit: FAudioDevice initialized.
+[2016.04.19-10.10.11:009][714]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.04.19-10.10.11:010][714]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.04.19-19.10.11
+[2016.04.19-10.10.11:010][714]LogWorld: Bringing up level for play took: 0.001577
+[2016.04.19-10.10.11:014][714]PIE: 情報 /Game/UEDPIE_0_tes -0.176のプレイ イン エディタの開始時間
+[2016.04.19-10.10.11:014][714]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.10.17:923][532]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.10.18:051][532]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.10.18:147][534]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.10.19:832][694]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.10.19:832][694]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.19-10.10.19:832][694]PIE: New page: PIEセッション: tes (2016/04/20 4:10:19)
+[2016.04.19-10.10.19:832][694]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.04.19-10.10.19:834][694]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002221s)
+[2016.04.19-10.10.19:835][694]LogAIModule: Creating AISystem for world tes
+[2016.04.19-10.10.19:835][694]LogPlayLevel: PIE: World Init took: (0.000429s)
+[2016.04.19-10.10.19:835][694]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.002823s)
+[2016.04.19-10.10.19:852][694]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.04.19-10.10.19:854][694]LogInit: FAudioDevice initialized.
+[2016.04.19-10.10.19:884][694]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.04.19-10.10.19:886][694]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.04.19-19.10.19
+[2016.04.19-10.10.19:886][694]LogWorld: Bringing up level for play took: 0.001541
+[2016.04.19-10.10.19:889][694]PIE: 情報 /Game/UEDPIE_0_tes 0.699のプレイ イン エディタの開始時間
+[2016.04.19-10.10.19:890][694]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.10.22:859][ 38]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.10.23:011][ 38]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.04.19-10.10.23:111][ 40]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.10.26:145][182]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.10.34:764][733]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.04.19-10.10.35:515][813]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.04.19-10.10.36:582][813]LogSavePackage: Save=29.90ms
+[2016.04.19-10.10.36:582][813]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Saved/ButtleGameMode_BP9568125A4FA4CB81A4A0E19614C56607.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/ButtleGameMode_BP.uasset'
+[2016.04.19-10.10.36:584][813]LogSavePackage: Total save time: 42.26ms
+[2016.04.19-10.10.36:584][813]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/ButtleGameMode_BP.uasset
+[2016.04.19-10.10.36:603][813]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrints/Marisa_BP" FILE="../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/Marisa_BP.uasset" SILENT=true
+[2016.04.19-10.10.36:934][813]LogSavePackage: Save=322.33ms
+[2016.04.19-10.10.36:934][813]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Saved/Marisa_BP97EDD0744F68AB42BDB7419C34B1032E.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/Marisa_BP.uasset'
+[2016.04.19-10.10.36:935][813]LogSavePackage: Total save time: 331.94ms
+[2016.04.19-10.10.36:935][813]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/Marisa_BP.uasset
+[2016.04.19-10.10.36:941][813]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrints/UMG/ButtoleUI" FILE="../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/UMG/ButtoleUI.uasset" SILENT=true
+[2016.04.19-10.10.37:038][813]LogSavePackage: Save=88.42ms
+[2016.04.19-10.10.37:038][813]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Saved/ButtoleUIB048EEF14D3D8E756303AB9B6EB18436.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/UMG/ButtoleUI.uasset'
+[2016.04.19-10.10.37:040][813]LogSavePackage: Total save time: 98.13ms
+[2016.04.19-10.10.37:040][813]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/UMG/ButtoleUI.uasset
+[2016.04.19-10.10.37:045][813]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrints/UMG/MagicIcon_BP" FILE="../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/UMG/MagicIcon_BP.uasset" SILENT=true
+[2016.04.19-10.10.37:093][813]LogSavePackage: Save=39.54ms
+[2016.04.19-10.10.37:093][813]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Saved/MagicIcon_BP8617EE3E4DAC58416EC5FD8CA63AB47B.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/UMG/MagicIcon_BP.uasset'
+[2016.04.19-10.10.37:095][813]LogSavePackage: Total save time: 48.65ms
+[2016.04.19-10.10.37:095][813]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDangion/Content/BluePrints/UMG/MagicIcon_BP.uasset
+[2016.04.19-10.10.37:310][813]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2016.04.19-10.10.37:467][813]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-10.10.37:468][813]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-10.10.38:182][813]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-10.10.38:183][813]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-10.10.38:376][814]Cmd: QUIT_EDITOR
+[2016.04.19-10.10.39:353][814]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-10.10.39:354][814]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.04.19-10.10.39:381][814]LogExit: Preparing to exit.
+[2016.04.19-10.10.39:820][814]LogExit: Editor shut down
+[2016.04.19-10.10.39:820][814]LogExit: Transaction tracking system shut down
+[2016.04.19-10.10.39:939][814]LogObj: Freed 0b from 0 cluster array pools.
+[2016.04.19-10.10.39:939][814]LogExit: Object subsystem successfully closed.
+[2016.04.19-10.10.39:955][814]LogD3D11RHI: Shutdown
+[2016.04.19-10.10.39:955][814]LogD3D11RHI: CleanupD3DDevice
+[2016.04.19-10.10.40:097][814]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.04.19-10.10.40:109][814]LogDerivedDataCache: Shutdown
+[2016.04.19-10.10.40:115][814]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (206)
+[2016.04.19-10.10.40:115][814]LogModuleManager: Shutting down and abandoning module SequencerWidgets (205)
+[2016.04.19-10.10.40:115][814]LogModuleManager: Shutting down and abandoning module BlueprintGraph (204)
+[2016.04.19-10.10.40:115][814]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (203)
+[2016.04.19-10.10.40:115][814]LogModuleManager: Shutting down and abandoning module CrashTracker (202)
+[2016.04.19-10.10.40:115][814]LogModuleManager: Shutting down and abandoning module SuperSearch (201)
+[2016.04.19-10.10.40:116][814]LogModuleManager: Shutting down and abandoning module WidgetCarousel (200)
+[2016.04.19-10.10.40:116][814]LogModuleManager: Shutting down and abandoning module AddContentDialog (199)
+[2016.04.19-10.10.40:116][814]LogModuleManager: Shutting down and abandoning module GameplayTags (198)
+[2016.04.19-10.10.40:116][814]LogModuleManager: Shutting down and abandoning module EditorWidgets (197)
+[2016.04.19-10.10.40:116][814]LogModuleManager: Shutting down and abandoning module CollectionManager (196)
+[2016.04.19-10.10.40:116][814]LogModuleManager: Shutting down and abandoning module SceneOutliner (195)
+[2016.04.19-10.10.40:116][814]LogModuleManager: Shutting down and abandoning module StatsViewer (194)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module FoliageEdit (193)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module LandscapeEditor (192)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module ActorPickerMode (191)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module GeometryMode (190)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module TextureAlignMode (189)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module BspMode (188)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module PlacementMode (187)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module AutomationWorker (186)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module CharacterAI (185)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module SmartSnapping (184)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module ViewportSnapping (183)
+[2016.04.19-10.10.40:117][814]LogModuleManager: Shutting down and abandoning module LogVisualizer (182)
+[2016.04.19-10.10.40:118][814]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (181)
+[2016.04.19-10.10.40:118][814]LogModuleManager: Shutting down and abandoning module IntroTutorials (180)
+[2016.04.19-10.10.40:119][814]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (179)
+[2016.04.19-10.10.40:119][814]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (178)
+[2016.04.19-10.10.40:119][814]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (177)
+[2016.04.19-10.10.40:119][814]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (176)
+[2016.04.19-10.10.40:427][814]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (175)
+[2016.04.19-10.10.40:428][814]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (174)
+[2016.04.19-10.10.40:428][814]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (173)
+[2016.04.19-10.10.40:428][814]LogModuleManager: Shutting down and abandoning module MergeActors (172)
+[2016.04.19-10.10.40:428][814]LogModuleManager: Shutting down and abandoning module SizeMap (171)
+[2016.04.19-10.10.40:428][814]LogModuleManager: Shutting down and abandoning module TreeMap (170)
+[2016.04.19-10.10.40:428][814]LogModuleManager: Shutting down and abandoning module ReferenceViewer (169)
+[2016.04.19-10.10.40:428][814]LogModuleManager: Shutting down and abandoning module LocalizationService (168)
+[2016.04.19-10.10.40:429][814]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (167)
+[2016.04.19-10.10.40:429][814]LogModuleManager: Shutting down and abandoning module HardwareTargeting (166)
+[2016.04.19-10.10.40:429][814]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (165)
+[2016.04.19-10.10.40:429][814]LogModuleManager: Shutting down and abandoning module UndoHistory (164)
+[2016.04.19-10.10.40:430][814]LogModuleManager: Shutting down and abandoning module UserFeedback (163)
+[2016.04.19-10.10.40:430][814]LogModuleManager: Shutting down and abandoning module XmlParser (162)
+[2016.04.19-10.10.40:430][814]LogModuleManager: Shutting down and abandoning module Blutility (161)
+[2016.04.19-10.10.40:430][814]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (160)
+[2016.04.19-10.10.40:430][814]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (159)
+[2016.04.19-10.10.40:430][814]LogModuleManager: Shutting down and abandoning module InputBindingEditor (158)
+[2016.04.19-10.10.40:430][814]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (157)
+[2016.04.19-10.10.40:430][814]LogModuleManager: Shutting down and abandoning module SettingsEditor (156)
+[2016.04.19-10.10.40:431][814]LogModuleManager: Shutting down and abandoning module ProjectLauncher (155)
+[2016.04.19-10.10.40:431][814]LogModuleManager: Shutting down and abandoning module SessionFrontend (154)
+[2016.04.19-10.10.40:431][814]LogModuleManager: Shutting down and abandoning module ProfilerClient (153)
+[2016.04.19-10.10.40:432][814]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (152)
+[2016.04.19-10.10.40:432][814]LogModuleManager: Shutting down and abandoning module DeviceManager (151)
+[2016.04.19-10.10.40:474][814]LogModuleManager: Shutting down and abandoning module AutomationController (150)
+[2016.04.19-10.10.40:475][814]LogModuleManager: Shutting down and abandoning module AutomationWindow (149)
+[2016.04.19-10.10.40:476][814]LogModuleManager: Shutting down and abandoning module Layers (148)
+[2016.04.19-10.10.40:477][814]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (147)
+[2016.04.19-10.10.40:477][814]LogModuleManager: Shutting down and abandoning module DetailCustomizations (146)
+[2016.04.19-10.10.40:477][814]LogModuleManager: Shutting down and abandoning module PackagesDialog (145)
+[2016.04.19-10.10.40:477][814]LogModuleManager: Shutting down and abandoning module Persona (144)
+[2016.04.19-10.10.40:478][814]LogModuleManager: Shutting down and abandoning module Kismet (143)
+[2016.04.19-10.10.40:478][814]LogModuleManager: Shutting down and abandoning module GraphEditor (142)
+[2016.04.19-10.10.40:478][814]LogModuleManager: Shutting down and abandoning module ClassViewer (141)
+[2016.04.19-10.10.40:478][814]LogModuleManager: Shutting down and abandoning module Toolbox (140)
+[2016.04.19-10.10.40:478][814]LogModuleManager: Shutting down and abandoning module ModuleUI (139)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module MovieSceneTools (138)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module OutputLog (137)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module GammaUI (136)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module Documentation (135)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (134)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module AnalyticsET (133)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module Analytics (132)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module PortalServices (131)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module PortalRpc (130)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module MessagingRpc (129)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module AITestSuite (128)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module GameplayDebugger (127)
+[2016.04.19-10.10.40:479][814]LogModuleManager: Shutting down and abandoning module AIModule (126)
+[2016.04.19-10.10.40:480][814]LogModuleManager: Shutting down and abandoning module ProfilerService (125)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module TaskGraph (124)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module SlateRemote (123)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module SteamVRController (122)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module SteamVR (121)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (120)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module OculusLibrary (119)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module OculusInput (118)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (117)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module CableComponent (116)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (115)
+[2016.04.19-10.10.40:490][814]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (114)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module HTML5Networking (113)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (112)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module PluginBrowser (111)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module EpicSurvey (110)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module DesktopPlatform (109)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (108)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module UObjectPlugin (107)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (106)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (105)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module SourceControl (104)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module GitSourceControl (103)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (102)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (101)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (100)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module MeshPaint (99)
+[2016.04.19-10.10.40:491][814]LogModuleManager: Shutting down and abandoning module HotReload (98)
+[2016.04.19-10.10.40:492][814]LogModuleManager: Shutting down and abandoning module MainFrame (97)
+[2016.04.19-10.10.40:492][814]LogModuleManager: Shutting down and abandoning module LevelEditor (96)
+[2016.04.19-10.10.40:493][814]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (95)
+[2016.04.19-10.10.40:494][814]LogModuleManager: Shutting down and abandoning module AssetRegistry (94)
+[2016.04.19-10.10.40:597][814]LogModuleManager: Shutting down and abandoning module ContentBrowser (93)
+[2016.04.19-10.10.40:598][814]LogModuleManager: Shutting down and abandoning module Paper2DEditor (92)
+[2016.04.19-10.10.40:598][814]LogModuleManager: Shutting down and abandoning module UdpMessaging (91)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (90)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module Paper2D (89)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (88)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module Media (87)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module WmfMedia (86)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.04.19-10.10.40:699][814]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.04.19-10.10.40:700][814]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.04.19-10.10.40:700][814]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.04.19-10.10.40:700][814]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.04.19-10.10.40:700][814]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.04.19-10.10.40:700][814]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.04.19-10.10.40:700][814]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.04.19-10.10.40:700][814]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.04.19-10.10.40:700][814]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.04.19-10.10.40:701][814]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.04.19-10.10.40:701][814]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.04.19-10.10.40:702][814]LogDerivedDataCache: Shutdown
+[2016.04.19-10.10.40:702][814]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.04.19-10.10.40:703][814]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.04.19-10.10.40:704][814]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.04.19-10.10.43:206][814]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.04.19-10.10.43:207][814]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.04.19-10.10.43:208][814]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.04.19-10.10.43:208][814]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.04.19-10.10.43:208][814]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.04.19-10.10.43:208][814]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.04.19-10.10.43:208][814]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.04.19-10.10.43:211][814]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.04.19-10.10.43:211][814]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.04.19-10.10.43:211][814]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.04.19-10.10.43:211][814]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.04.19-10.10.43:211][814]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.04.19-10.10.43:211][814]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.04.19-10.10.43:211][814]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.04.19-10.10.43:212][814]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.04.19-10.10.43:212][814]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.04.19-10.10.43:212][814]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.04.19-10.10.43:214][814]LogExit: Exiting.
+[2016.04.19-10.10.43:215][814]Log file closed, 04/19/16 19:10:43
