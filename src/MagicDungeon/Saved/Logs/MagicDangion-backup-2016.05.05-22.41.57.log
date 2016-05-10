@@ -1,0 +1,907 @@
+﻿Log file open, 05/05/16 19:58:50
+LogInit:Display: Running engine for game: MagicDangion
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-2052399245) SRandInit(-2052399245).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.115934
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.05.05-10.58.50:209][  0]LogInit: Selected Device Profile: [Windows]
+[2016.05.05-10.58.50:209][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.05.05-10.58.50:222][  0]LogInit: Computer: LIGHT
+[2016.05.05-10.58.50:222][  0]LogInit: User: EllightDunois
+[2016.05.05-10.58.50:222][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.05.05-10.58.50:222][  0]LogInit: High frequency timer resolution =3.906245 MHz
+[2016.05.05-10.58.50:222][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.05.05-10.58.50:222][  0]LogMemory: Platform Memory Stats for Windows
+[2016.05.05-10.58.50:222][  0]LogMemory: Process Physical Memory: 314.37 MB used, 314.37 MB peak
+[2016.05.05-10.58.50:222][  0]LogMemory: Process Virtual Memory: 314.71 MB used, 314.71 MB peak
+[2016.05.05-10.58.50:222][  0]LogMemory: Physical Memory: 3508.42 MB used, 8133.65 MB total
+[2016.05.05-10.58.50:222][  0]LogMemory: Virtual Memory: 652.86 MB used, 134217728.00 MB total
+[2016.05.05-10.58.50:350][  0]LogTextLocalizationManager: No specific translations for ('ja-JP') exist, so ('ja') translations will be used.
+[2016.05.05-10.58.50:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:false):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (816077464) Localized String: (偽)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (816077464) Localized String: (false)
+[2016.05.05-10.58.50:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:true):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-942328987) Localized String: (真)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (-942328987) Localized String: (true)
+[2016.05.05-10.58.50:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (再生が最後まで終わった後、ロープ再生するようにしますか？)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2133979316) Localized String: (ループが最後まで到達した時に、アニメーションのループを継続するべきか？)
+[2016.05.05-10.58.50:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースで値を取得するX座標)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースでサンプリングするX座標)
+[2016.05.05-10.58.50:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースで値を取得するY座標)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースでサンプリングするY座標)
+[2016.05.05-10.58.50:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースで値を取得するZ座標)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースでサンプリングするZ座標)
+[2016.05.05-10.58.50:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (再生するブレンドスペースのアセット)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1599043277) Localized String: (再生するブレンド空間アセット)
+[2016.05.05-10.58.50:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (このマシーンで1フレームあたりに同時に処理できるトランジションの最大数)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1567650430) Localized String: (単一フレームでマシーンが「同時」に受け取れる遷移の最大数)
+[2016.05.05-10.58.50:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (再生速度の倍率です。負の数値も使う事ができます。その場合逆再生になります。)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (再生レート乗数。アニメーションを逆再生する負の値にすることができます。)
+[2016.05.05-10.58.50:584][  0]LogD3D11RHI: D3D11 adapters:
+[2016.05.05-10.58.50:593][  0]LogD3D11RHI:    0. 'AMD Radeon R9 200 Series' (Feature Level 11_0)
+[2016.05.05-10.58.50:593][  0]LogD3D11RHI:       4074MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 1 output[s]
+[2016.05.05-10.58.50:594][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.05.05-10.58.50:594][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 0 output[s]
+[2016.05.05-10.58.50:594][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.05.05-10.58.50:598][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.05.05-10.58.50:598][  0]LogD3D11RHI:     Adapter Name: AMD Radeon R9 200 Series
+[2016.05.05-10.58.50:598][  0]LogD3D11RHI:   Driver Version: Catalyst 15.8 (internal 16.150.2211.0)
+[2016.05.05-10.58.50:598][  0]LogD3D11RHI:      Driver Date: 3-21-2016
+[2016.05.05-10.58.50:598][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.05.05-10.58.50:604][  0]LogD3D11RHI: Async texture creation disabled: no driver support
+[2016.05.05-10.58.50:614][  0]LogShaderCompilers: Guid format shader working directory is -52 characters bigger than the processId version (../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Intermediate/Shaders/WorkingDirectory/8212/).
+[2016.05.05-10.58.50:614][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/ELLIGH~1/AppData/Local/Temp/UnrealShaderWorkingDir/2DA3569C492D0DFDFAF8D780B480E9FB/'.
+[2016.05.05-10.58.50:614][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.05.05-10.58.51:792][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.05.05-10.58.51:795][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.05.05-10.58.51:798][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.05.05-10.58.51:801][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.05.05-10.58.51:804][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.05.05-10.58.51:809][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.05.05-10.58.51:811][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.05.05-10.58.51:814][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.05.05-10.58.51:817][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.05.05-10.58.51:819][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.05.05-10.58.51:821][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.05.05-10.58.51:826][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.05.05-10.58.51:826][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.05.05-10.58.51:827][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.05.05-10.58.51:861][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.05.05-10.58.51:863][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.05.05-10.58.51:865][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.05.05-10.58.51:868][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.05.05-10.58.51:872][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.05.05-10.58.51:872][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.05.05-10.58.52:088][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.05.05-10.58.52:355][  0]LogDerivedDataCache: Loaded boot cache 0.27s 46MB C:/Users/EllightDunois/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.05.05-10.58.52:355][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/EllightDunois/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.05.05-10.58.52:355][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.05.05-10.58.52:355][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.05.05-10.58.52:356][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.05.05-10.58.52:356][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.05.05-10.58.52:376][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.05.05-10.58.52:388][  0]LogDerivedDataCache: Using Local data cache path C:/Users/EllightDunois/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.05.05-10.58.54:437][  0]LogInit: Selected Device Profile: [Windows]
+[2016.05.05-10.58.54:442][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.05.05-10.58.54:606][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.05.05-10.58.54:757][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.05.05-10.58.54:757][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.05.05-10.58.54:757][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.05.05-10.58.55:244][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.05.05-10.58.55:244][  0]LogUObjectAllocator: 5591592 out of 0 bytes used by permanent object pool.
+[2016.05.05-10.58.55:244][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.05.05-10.58.55:248][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.05.05-10.58.55:426][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.05.05-10.58.55:426][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.05.05-10.58.55:801][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.05.05-10.58.55:801][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.05.05-10.58.55:802][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.05.05-10.58.55:802][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.05.05-10.58.55:802][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.05.05-10.58.55:802][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.05.05-10.58.56:844][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.05.05-10.58.56:968][  0]LogAssetRegistry: FAssetRegistry took 0.0227 seconds to start up
+[2016.05.05-10.58.57:223][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.05.05-10.58.57:299][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.05.05-10.58.57:308][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.05.05-10.58.57:314][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.05.05-10.58.57:413][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2016.05.05-10.58.57:523][  0]LogEngine: Initializing Engine...
+[2016.05.05-10.58.57:728][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.05.05-10.58.57:741][  0]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-10.58.57:747][  0]LogInit: FAudioDevice initialized.
+[2016.05.05-10.58.57:766][  0]LogDerivedDataCache: Saved boot cache 0.02s 46MB C:/Users/EllightDunois/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.05.05-10.58.57:782][  0]LogInit: Texture streaming: Enabled
+[2016.05.05-10.58.57:841][  0]LogInit: Transaction tracking system initialized
+[2016.05.05-10.58.57:874][  0]BlueprintLog: New page: エディタの読み込み
+[2016.05.05-10.58.57:981][  0]LocalizationService: 情報 ローカライズのサービスが無効になりました
+[2016.05.05-10.58.58:159][  0]LogConsoleResponse:Display: 
+[2016.05.05-10.58.58:417][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.05.05-10.58.58:417][  0]LogCook:Display: Mobile HDR setting 1
+[2016.05.05-10.58.58:417][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.05.05-10.58.58:476][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/' took 0.02s
+[2016.05.05-10.58.58:476][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.05.05-10.58.58:478][  0]Cmd: MAP LOAD FILE="../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/tes.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.05.05-10.58.58:481][  0]LightingResults: New page: ライティングのビルド
+[2016.05.05-10.58.58:490][  0]MapCheck: New page: マップをチェック
+[2016.05.05-10.58.58:490][  0]LightingResults: New page: <何も選択されていません>
+[2016.05.05-10.58.59:059][  0]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Scene' in BlueprintGeneratedClass 'REINST_Attack_BP_C_50' (it may have been removed)
+[2016.05.05-10.59.00:952][  0]LogAIModule: Creating AISystem for world tes
+[2016.05.05-10.59.01:057][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.05.05-10.59.01:059][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.05.05-10.59.01:101][  0]MapCheck: 情報 マップチェックが完了: 0 エラー、 0 警告、完了に 42.042ミリ秒かかりました。
+[2016.05.05-10.59.01:101][  0]LogFileHelpers: Loading map 'tes' took 2.624
+[2016.05.05-10.59.01:325][  0]LogCollectionManager: Loaded 0 collections in 0.001523 seconds
+[2016.05.05-10.59.01:381][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Collections/' took 0.01s
+[2016.05.05-10.59.01:381][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/Developers/EllightDunois/Collections/' took 0.01s
+[2016.05.05-10.59.01:381][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/Collections/' took 0.01s
+[2016.05.05-10.59.01:381][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000021 seconds
+[2016.05.05-10.59.01:401][  0]LogContentBrowser: Native class hierarchy populated in 0.0198 seconds. Added 1980 classes and 345 folders.
+[2016.05.05-10.59.01:412][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.05.05-10.59.01:412][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.05.05-10.59.01:412][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 12 classes and 0 folders.
+[2016.05.05-10.59.01:418][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.05.05-10.59.01:437][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.05.05-10.59.01:623][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.05.05-10.59.01:790][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.05.05-10.59.01:801][  0]LogUObjectGlobals:Warning: オブジェクト 'Class なし.' が見つかりませんでした
+[2016.05.05-10.59.01:830][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.05.05-10.59.01:830][  0]LogLoad: Full Startup: 12.78 seconds (BP compile: 0.35 seconds)
+[2016.05.05-10.59.01:830][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.05.05-10.59.01:830][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.05.05-10.59.01:842][  0]LogOcInput: OculusInput pre-init called
+[2016.05.05-10.59.01:986][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.05.05-10.59.02:215][  0]LogRenderer: Reallocating scene render targets to support 2248x884 (Frame:2).
+[2016.05.05-10.59.02:503][  1]LogAssetRegistry: Asset discovery search completed in 5.5562 seconds
+[2016.05.05-10.59.02:503][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.05.05-10.59.02:503][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000270 seconds (updated 0 objects)
+[2016.05.05-10.59.19:378][780]Cmd: EDIT COPY
+[2016.05.05-10.59.19:713][814]Cmd: EDIT PASTE
+[2016.05.05-10.59.43:742][412]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2016.05.05-10.59.50:705][153]LogEditorViewport: Clicking on Actor (LMB): NavMeshBoundsVolume (NavMeshBoundsVolume)
+[2016.05.05-10.59.56:342][755]Cmd: EDIT COPY
+[2016.05.05-10.59.56:752][799]Cmd: EDIT PASTE
+[2016.05.05-11.00.21:913][564]Cmd: EDIT COPY
+[2016.05.05-11.00.22:308][604]Cmd: EDIT PASTE
+[2016.05.05-11.00.58:968][473]Cmd: EDIT COPY
+[2016.05.05-11.00.59:244][502]Cmd: EDIT PASTE
+[2016.05.05-11.01.07:411][337]LogEditorViewport: Clicking on Actor (LMB): NavMeshBoundsVolume (NavMeshBoundsVolume2)
+[2016.05.05-11.01.08:981][497]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2016.05.05-11.01.10:431][636]Cmd: EDIT COPY
+[2016.05.05-11.01.10:687][662]Cmd: EDIT PASTE
+[2016.05.05-11.01.29:220][555]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2016.05.05-11.01.29:984][625]LogEditorViewport: Clicking on Actor (LMB): NavMeshBoundsVolume (NavMeshBoundsVolume)
+[2016.05.05-11.01.32:256][839]Cmd: EDIT COPY
+[2016.05.05-11.01.32:583][871]Cmd: EDIT PASTE
+[2016.05.05-11.02.19:594][521]Cmd: EDIT COPY
+[2016.05.05-11.02.20:060][568]Cmd: EDIT PASTE
+[2016.05.05-11.02.39:208][477]Cmd: EDIT COPY
+[2016.05.05-11.02.39:505][506]Cmd: EDIT PASTE
+[2016.05.05-11.02.45:448][ 80]LogEditorViewport: Clicking on Actor (LMB): NavMeshBoundsVolume (NavMeshBoundsVolume2)
+[2016.05.05-11.02.46:829][210]Cmd: EDIT COPY
+[2016.05.05-11.02.47:125][239]Cmd: EDIT PASTE
+[2016.05.05-11.03.12:386][728]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2016.05.05-11.03.12:971][782]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2016.05.05-11.03.13:594][843]LogEditorViewport: Clicking on Actor (LMB): NavMeshBoundsVolume (NavMeshBoundsVolume3)
+[2016.05.05-11.04.08:369][391]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.04.08:369][391]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.04.08:391][391]PIE: New page: PIEセッション: tes (2016/05/06 5:04:08)
+[2016.05.05-11.04.08:391][391]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.04.08:397][391]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006525s)
+[2016.05.05-11.04.08:398][391]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.04.08:398][391]LogPlayLevel: PIE: World Init took: (0.000553s)
+[2016.05.05-11.04.08:398][391]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007313s)
+[2016.05.05-11.04.08:398][391]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.05-11.04.08:398][391]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_0) Not registered. Aborting.
+[2016.05.05-11.04.08:398][391]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_1) Not registered. Aborting.
+[2016.05.05-11.04.08:452][391]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.04.08:455][391]LogInit: FAudioDevice initialized.
+[2016.05.05-11.04.08:500][391]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.04.08:505][391]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.04.08
+[2016.05.05-11.04.08:509][391]LogWorld: Bringing up level for play took: 0.007130
+[2016.05.05-11.04.08:514][391]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 9 classes and 0 folders.
+[2016.05.05-11.04.08:526][391]PIE: 情報 /Game/UEDPIE_0_tes -0.669のプレイ イン エディタの開始時間
+[2016.05.05-11.04.08:527][391]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.04.08:584][392]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 409/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.04.44:493][690]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.04.44:594][690]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.04.57:578][810]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 108 classes and 0 folders.
+[2016.05.05-11.07.02:527][734]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3505.EdGraphPin_49610''
+[2016.05.05-11.07.02:527][734]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3506.EdGraphPin_49615''
+[2016.05.05-11.07.02:527][734]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3506.EdGraphPin_49616''
+[2016.05.05-11.07.16:621][ 26]BlueprintLog: New page: EnemyStatosWidget_BP をコンパイル
+[2016.05.05-11.07.16:643][ 26]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.05-11.07.16:643][ 26]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_2) Not registered. Aborting.
+[2016.05.05-11.07.16:723][ 26]BlueprintEditorCompileResults: 情報 [0507.68] EnemyStatosWidget_BP のコンパイルに成功しました！  [ 100 ミリ秒]
+[2016.05.05-11.07.18:659][206]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.07.18:659][206]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.07.18:659][206]PIE: New page: PIEセッション: tes (2016/05/06 5:07:18)
+[2016.05.05-11.07.18:659][206]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.07.18:666][206]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006782s)
+[2016.05.05-11.07.18:667][206]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.07.18:667][206]LogPlayLevel: PIE: World Init took: (0.000455s)
+[2016.05.05-11.07.18:667][206]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007418s)
+[2016.05.05-11.07.18:683][206]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.07.18:686][206]LogInit: FAudioDevice initialized.
+[2016.05.05-11.07.18:717][206]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.07.18:720][206]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.07.18
+[2016.05.05-11.07.18:722][206]LogWorld: Bringing up level for play took: 0.004263
+[2016.05.05-11.07.18:727][206]PIE: 情報 /Game/UEDPIE_0_tes -0.469のプレイ イン エディタの開始時間
+[2016.05.05-11.07.18:727][206]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.07.18:779][207]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 425/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.07.27:612][249]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.07.27:663][249]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.07.27:747][252]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.07.29:796][349]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.07.45:367][513]BlueprintLog: New page: EnemyStatosWidget_BP をコンパイル
+[2016.05.05-11.07.45:502][513]BlueprintEditorCompileResults: 情報 [0536.46] EnemyStatosWidget_BP のコンパイルに成功しました！  [ 135 ミリ秒]
+[2016.05.05-11.08.20:873][416]BlueprintLog: New page: EnemyStatosWidget_BP をコンパイル
+[2016.05.05-11.08.20:957][416]BlueprintEditorCompileResults: 情報 [0571.91] EnemyStatosWidget_BP のコンパイルに成功しました！  [ 84 ミリ秒]
+[2016.05.05-11.08.22:884][586]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.08.22:884][586]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.08.22:884][586]PIE: New page: PIEセッション: tes (2016/05/06 5:08:22)
+[2016.05.05-11.08.22:884][586]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.08.22:891][586]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006491s)
+[2016.05.05-11.08.22:891][586]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.08.22:891][586]LogPlayLevel: PIE: World Init took: (0.000424s)
+[2016.05.05-11.08.22:891][586]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007092s)
+[2016.05.05-11.08.22:907][586]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.08.22:910][586]LogInit: FAudioDevice initialized.
+[2016.05.05-11.08.22:937][586]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.08.22:940][586]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.08.22
+[2016.05.05-11.08.22:942][586]LogWorld: Bringing up level for play took: 0.004394
+[2016.05.05-11.08.22:947][586]PIE: 情報 /Game/UEDPIE_0_tes -0.249のプレイ イン エディタの開始時間
+[2016.05.05-11.08.22:947][586]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.08.39:652][569]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.39:660][570]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.39:669][571]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.39:677][572]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.39:702][575]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.39:710][576]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.39:719][577]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.39:735][579]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.39:744][580]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.40:113][624]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.42:855][943]LogCharacterMovement: Bat_BP2 is stuck and failed to move!
+[2016.05.05-11.08.43:521][ 20]LogCharacterMovement: Bat_BP2 is stuck and failed to move!
+[2016.05.05-11.08.43:546][ 23]LogCharacterMovement: Bat_BP2 is stuck and failed to move!
+[2016.05.05-11.08.43:571][ 26]LogCharacterMovement: Bat_BP2 is stuck and failed to move!
+[2016.05.05-11.08.43:579][ 27]LogCharacterMovement: Bat_BP2 is stuck and failed to move!
+[2016.05.05-11.08.43:587][ 28]LogCharacterMovement: Bat_BP2 is stuck and failed to move!
+[2016.05.05-11.08.43:595][ 29]LogCharacterMovement: Bat_BP2 is stuck and failed to move!
+[2016.05.05-11.08.45:292][232]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:301][233]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:317][235]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:359][240]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:376][242]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:384][243]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:401][245]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:409][246]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:417][247]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:426][248]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:434][249]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:442][250]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:451][251]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:459][252]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:468][253]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:476][254]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:485][255]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:501][257]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:543][262]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:560][264]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:576][266]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:593][268]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:610][270]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:627][272]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:643][274]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:660][276]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:677][278]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:693][280]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:710][282]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:743][286]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:760][288]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:777][290]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:793][292]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:810][294]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:826][296]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:843][298]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:860][300]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:876][302]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:893][304]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:910][306]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:926][308]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:960][312]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:976][314]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.45:993][316]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.08.46:010][318]LogCharacterMovement: Bat_BP3 is stuck and failed to move!
+[2016.05.05-11.09.21:979][578]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.09.22:032][578]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.09.22:116][581]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.09.24:223][770]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.09.25:207][858]LogEditorViewport: Clicking on Actor (LMB): Spider_BP_C (Spider_BP)
+[2016.05.05-11.09.41:027][107]BlueprintLog: New page: Spider_BP をコンパイル
+[2016.05.05-11.09.41:126][107]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.05-11.09.41:190][107]BlueprintEditorCompileResults: 情報 [0652.14] Spider_BP のコンパイルに成功しました！  [ 163 ミリ秒]
+[2016.05.05-11.09.43:234][300]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.09.43:234][300]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.09.43:234][300]PIE: New page: PIEセッション: tes (2016/05/06 5:09:43)
+[2016.05.05-11.09.43:235][300]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.09.43:241][300]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006753s)
+[2016.05.05-11.09.43:242][300]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.09.43:242][300]LogPlayLevel: PIE: World Init took: (0.000421s)
+[2016.05.05-11.09.43:242][300]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007371s)
+[2016.05.05-11.09.43:242][300]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.05-11.09.43:258][300]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.09.43:261][300]LogInit: FAudioDevice initialized.
+[2016.05.05-11.09.43:293][300]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.09.43:296][300]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.09.43
+[2016.05.05-11.09.43:298][300]LogWorld: Bringing up level for play took: 0.004212
+[2016.05.05-11.09.43:302][300]PIE: 情報 /Game/UEDPIE_0_tes 0.107のプレイ イン エディタの開始時間
+[2016.05.05-11.09.43:303][300]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.09.43:350][301]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 425/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.10.09:610][442]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.10.09:716][442]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.10.09:846][444]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.10.46:507][636]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.11.06:071][379]BlueprintLog: New page: EnemyStatosWidget_BP をコンパイル
+[2016.05.05-11.11.06:155][379]BlueprintEditorCompileResults: 情報 [0737.11] EnemyStatosWidget_BP のコンパイルに成功しました！  [ 83 ミリ秒]
+[2016.05.05-11.11.08:189][565]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.11.08:190][565]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.11.08:190][565]PIE: New page: PIEセッション: tes (2016/05/06 5:11:08)
+[2016.05.05-11.11.08:190][565]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.11.08:196][565]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006645s)
+[2016.05.05-11.11.08:197][565]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.11.08:197][565]LogPlayLevel: PIE: World Init took: (0.000458s)
+[2016.05.05-11.11.08:197][565]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007278s)
+[2016.05.05-11.11.08:217][565]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.11.08:220][565]LogInit: FAudioDevice initialized.
+[2016.05.05-11.11.08:249][565]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.11.08:252][565]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.11.08
+[2016.05.05-11.11.08:254][565]LogWorld: Bringing up level for play took: 0.004246
+[2016.05.05-11.11.08:259][565]PIE: 情報 /Game/UEDPIE_0_tes 1.063のプレイ イン エディタの開始時間
+[2016.05.05-11.11.08:259][565]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.11.18:541][794]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.11.18:652][794]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.11.18:800][796]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.11.20:053][856]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.11.23:720][160]BlueprintLog: New page: EnemyStatosWidget_BP をコンパイル
+[2016.05.05-11.11.23:804][160]BlueprintEditorCompileResults: 情報 [0754.76] EnemyStatosWidget_BP のコンパイルに成功しました！  [ 83 ミリ秒]
+[2016.05.05-11.11.25:704][327]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.11.25:704][327]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.11.25:704][327]PIE: New page: PIEセッション: tes (2016/05/06 5:11:25)
+[2016.05.05-11.11.25:704][327]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.11.25:711][327]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006748s)
+[2016.05.05-11.11.25:711][327]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.11.25:711][327]LogPlayLevel: PIE: World Init took: (0.000433s)
+[2016.05.05-11.11.25:711][327]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007365s)
+[2016.05.05-11.11.25:728][327]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.11.25:730][327]LogInit: FAudioDevice initialized.
+[2016.05.05-11.11.25:762][327]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.11.25:765][327]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.11.25
+[2016.05.05-11.11.25:767][327]LogWorld: Bringing up level for play took: 0.004249
+[2016.05.05-11.11.25:772][327]PIE: 情報 /Game/UEDPIE_0_tes 0.576のプレイ イン エディタの開始時間
+[2016.05.05-11.11.25:772][327]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.11.34:301][338]LogBlueprintUserMessages: [EnemyAttack_BP_C_0] Hello
+[2016.05.05-11.12.11:915][842]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.12.12:020][842]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.12.12:138][844]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.12.14:288][925]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.12.32:825][476]BlueprintLog: New page: EnemyStatosWidget_BP をコンパイル
+[2016.05.05-11.12.32:910][476]BlueprintEditorCompileResults: 情報 [0823.86] EnemyStatosWidget_BP のコンパイルに成功しました！  [ 84 ミリ秒]
+[2016.05.05-11.12.35:775][712]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.12.35:775][712]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.12.35:775][712]PIE: New page: PIEセッション: tes (2016/05/06 5:12:35)
+[2016.05.05-11.12.35:775][712]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.12.35:781][712]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005926s)
+[2016.05.05-11.12.35:781][712]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.12.35:781][712]LogPlayLevel: PIE: World Init took: (0.000390s)
+[2016.05.05-11.12.35:781][712]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.006478s)
+[2016.05.05-11.12.35:799][712]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.12.35:801][712]LogInit: FAudioDevice initialized.
+[2016.05.05-11.12.35:834][712]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.12.35:837][712]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.12.35
+[2016.05.05-11.12.35:839][712]LogWorld: Bringing up level for play took: 0.004230
+[2016.05.05-11.12.35:844][712]PIE: 情報 /Game/UEDPIE_0_tes 0.648のプレイ イン エディタの開始時間
+[2016.05.05-11.12.35:844][712]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.12.42:095][456]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.12.42:195][456]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.13.21:452][857]BlueprintLog: New page: EnemyStatosWidget_BP をコンパイル
+[2016.05.05-11.13.21:535][857]BlueprintEditorCompileResults: 情報 [0872.49] EnemyStatosWidget_BP のコンパイルに成功しました！  [ 82 ミリ秒]
+[2016.05.05-11.13.23:598][ 43]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.13.23:598][ 43]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.13.23:598][ 43]PIE: New page: PIEセッション: tes (2016/05/06 5:13:23)
+[2016.05.05-11.13.23:598][ 43]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.13.23:606][ 43]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006778s)
+[2016.05.05-11.13.23:606][ 43]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.13.23:606][ 43]LogPlayLevel: PIE: World Init took: (0.000436s)
+[2016.05.05-11.13.23:606][ 43]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007397s)
+[2016.05.05-11.13.23:625][ 43]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.13.23:628][ 43]LogInit: FAudioDevice initialized.
+[2016.05.05-11.13.23:658][ 43]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.13.23:661][ 43]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.13.23
+[2016.05.05-11.13.23:663][ 43]LogWorld: Bringing up level for play took: 0.004225
+[2016.05.05-11.13.23:668][ 43]PIE: 情報 /Game/UEDPIE_0_tes 0.472のプレイ イン エディタの開始時間
+[2016.05.05-11.13.23:668][ 43]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.13.23:715][ 44]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 425/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.13.27:229][462]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.13.27:330][462]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.13.27:454][464]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.13.28:678][516]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.14.07:324][891]LogEditorTransaction: Undo パラメターに追加
+[2016.05.05-11.14.12:792][354]BlueprintLog: New page: WidgetScreenFunction_BP をコンパイル
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377.EdGraphPin_51146. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377.EdGraphPin_51145. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377.EdGraphPin_51144. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377.EdGraphPin_51143. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377.EdGraphPin_51142. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377.EdGraphPin_51141. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377.EdGraphPin_51140. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377.EdGraphPin_51139. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/EnemyStatosWidget_BP.EnemyStatosWidget_BP:Update.K2Node_CallFunction_3377.EdGraphPin_51147. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973.EdGraphPin_51171. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973.EdGraphPin_51170. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973.EdGraphPin_51169. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973.EdGraphPin_51168. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973.EdGraphPin_51167. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973.EdGraphPin_51166. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973.EdGraphPin_51165. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973.EdGraphPin_51164. Try refresh all nodes.
+[2016.05.05-11.14.12:798][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3973.EdGraphPin_51172. Try refresh all nodes.
+[2016.05.05-11.14.12:799][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387.EdGraphPin_51196. Try refresh all nodes.
+[2016.05.05-11.14.12:799][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387.EdGraphPin_51195. Try refresh all nodes.
+[2016.05.05-11.14.12:799][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387.EdGraphPin_51194. Try refresh all nodes.
+[2016.05.05-11.14.12:799][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387.EdGraphPin_51193. Try refresh all nodes.
+[2016.05.05-11.14.12:799][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387.EdGraphPin_51192. Try refresh all nodes.
+[2016.05.05-11.14.12:799][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387.EdGraphPin_51191. Try refresh all nodes.
+[2016.05.05-11.14.12:799][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387.EdGraphPin_51190. Try refresh all nodes.
+[2016.05.05-11.14.12:799][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387.EdGraphPin_51189. Try refresh all nodes.
+[2016.05.05-11.14.12:799][354]LogBlueprint:Error: Broken Node: K2Node_CallFunction /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387 keeps removed/invalid pin: EdGraphPin /Game/BluePrints/UMG/DamageWidget_BP.DamageWidget_BP:EventGraph.K2Node_CallFunction_3387.EdGraphPin_51197. Try refresh all nodes.
+[2016.05.05-11.14.12:871][354]BlueprintEditorCompileResults: 情報 [0923.83] WidgetScreenFunction_BP のコンパイルに成功しました！  [ 79 ミリ秒]
+[2016.05.05-11.14.20:352][989]BlueprintLog: New page: EnemyStatosWidget_BP をコンパイル
+[2016.05.05-11.14.20:437][989]BlueprintEditorCompileResults: 情報 [0931.39] EnemyStatosWidget_BP のコンパイルに成功しました！  [ 84 ミリ秒]
+[2016.05.05-11.14.22:590][177]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.14.22:590][177]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.14.22:590][177]PIE: New page: PIEセッション: tes (2016/05/06 5:14:22)
+[2016.05.05-11.14.22:590][177]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.14.22:597][177]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006517s)
+[2016.05.05-11.14.22:597][177]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.14.22:597][177]LogPlayLevel: PIE: World Init took: (0.000443s)
+[2016.05.05-11.14.22:597][177]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007142s)
+[2016.05.05-11.14.22:616][177]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.14.22:618][177]LogInit: FAudioDevice initialized.
+[2016.05.05-11.14.22:650][177]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.14.22:653][177]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.14.22
+[2016.05.05-11.14.22:654][177]LogWorld: Bringing up level for play took: 0.004490
+[2016.05.05-11.14.22:660][177]PIE: 情報 /Game/UEDPIE_0_tes -0.536のプレイ イン エディタの開始時間
+[2016.05.05-11.14.22:660][177]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.14.35:022][634]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.14.35:133][634]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.14.35:249][637]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.14.36:689][762]LogEditorViewport: Clicking on Actor (LMB): Spider_BP_C (Spider_BP)
+[2016.05.05-11.14.37:588][843]Cmd: DELETE
+[2016.05.05-11.14.37:588][843]Cmd: ACTOR DELETE
+[2016.05.05-11.14.37:590][843]LogEditorActor: Deleted Actor: Spider_BP_C
+[2016.05.05-11.14.37:606][843]LogEditorActor: Deleted 1 Actors (0.018 secs)
+[2016.05.05-11.14.40:126][ 82]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.14.41:451][206]LogEditorViewport: Clicking on Actor (LMB): Slime_BP_C (Slime)
+[2016.05.05-11.14.44:668][486]Cmd: EDIT COPY
+[2016.05.05-11.14.45:033][520]Cmd: EDIT PASTE
+[2016.05.05-11.14.57:675][650]Cmd: EDIT COPY
+[2016.05.05-11.14.58:030][682]Cmd: EDIT PASTE
+[2016.05.05-11.15.01:049][944]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.15.01:049][944]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.15.01:049][944]PIE: New page: PIEセッション: tes (2016/05/06 5:15:01)
+[2016.05.05-11.15.01:049][944]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.15.01:056][944]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007138s)
+[2016.05.05-11.15.01:056][944]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.15.01:056][944]LogPlayLevel: PIE: World Init took: (0.000458s)
+[2016.05.05-11.15.01:057][944]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007783s)
+[2016.05.05-11.15.01:073][944]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.15.01:076][944]LogInit: FAudioDevice initialized.
+[2016.05.05-11.15.01:107][944]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.15.01:111][944]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.15.01
+[2016.05.05-11.15.01:113][944]LogWorld: Bringing up level for play took: 0.005380
+[2016.05.05-11.15.01:119][944]PIE: 情報 /Game/UEDPIE_0_tes -0.076のプレイ イン エディタの開始時間
+[2016.05.05-11.15.01:119][944]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.15.14:150][461]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.15.14:233][461]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.15.14:324][463]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.15.25:307][443]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.15.29:545][831]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.15.32:321][ 90]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.15.50:761][790]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.15.51:679][874]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.15.52:227][923]Cmd: EDIT COPY
+[2016.05.05-11.15.52:544][952]Cmd: EDIT PASTE
+[2016.05.05-11.16.00:486][677]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.16.13:196][821]LogEditorViewport: Clicking on Actor (LMB): Bat_BP_C (Bat_BP3)
+[2016.05.05-11.16.15:852][ 42]Cmd: EDIT COPY
+[2016.05.05-11.16.16:198][ 74]Cmd: EDIT PASTE
+[2016.05.05-11.16.30:272][359]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.16.31:394][458]Cmd: EDIT COPY
+[2016.05.05-11.16.31:776][493]Cmd: EDIT PASTE
+[2016.05.05-11.16.36:516][929]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.16.36:516][929]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.16.36:516][929]PIE: New page: PIEセッション: tes (2016/05/06 5:16:36)
+[2016.05.05-11.16.36:516][929]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.16.36:523][929]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007164s)
+[2016.05.05-11.16.36:524][929]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.16.36:524][929]LogPlayLevel: PIE: World Init took: (0.000423s)
+[2016.05.05-11.16.36:524][929]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007776s)
+[2016.05.05-11.16.36:542][929]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.16.36:545][929]LogInit: FAudioDevice initialized.
+[2016.05.05-11.16.36:575][929]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.16.36:580][929]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.16.36
+[2016.05.05-11.16.36:582][929]LogWorld: Bringing up level for play took: 0.006239
+[2016.05.05-11.16.36:588][929]PIE: 情報 /Game/UEDPIE_0_tes -0.608のプレイ イン エディタの開始時間
+[2016.05.05-11.16.36:588][929]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.16.36:635][930]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 425/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.16.46:556][ 99]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.16.46:665][ 99]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.16.49:714][372]LogEditorViewport: Clicking on Actor (LMB): Bat_BP_C (Bat_BP4)
+[2016.05.05-11.16.52:174][591]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.17.20:989][286]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.17.24:291][594]LogEditorViewport: Clicking Background
+[2016.05.05-11.17.32:367][345]LogEditorViewport: Clicking Background
+[2016.05.05-11.17.36:830][754]LogEditorViewport: Clicking on Actor (CTRL LMB): NavMeshBoundsVolume (NavMeshBoundsVolume3)
+[2016.05.05-11.17.43:618][391]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.17.45:645][588]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.18.13:058][162]LogEditorViewport: Clicking on Actor (LMB): Bat_BP_C (Bat_BP4)
+[2016.05.05-11.18.14:815][310]Cmd: EDIT COPY
+[2016.05.05-11.18.15:111][338]Cmd: EDIT PASTE
+[2016.05.05-11.18.23:823][146]Cmd: EDIT COPY
+[2016.05.05-11.18.24:190][181]Cmd: EDIT PASTE
+[2016.05.05-11.18.34:144][126]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.18.34:958][192]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.18.46:289][222]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.19.01:352][559]LogEditorViewport: Clicking on Actor (CTRL LMB): NavMeshBoundsVolume (NavMeshBoundsVolume3)
+[2016.05.05-11.19.15:892][806]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.19.17:670][969]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.19.18:426][ 35]Cmd: EDIT COPY
+[2016.05.05-11.19.18:693][ 58]Cmd: EDIT PASTE
+[2016.05.05-11.19.22:657][413]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.19.22:657][413]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.19.22:657][413]PIE: New page: PIEセッション: tes (2016/05/06 5:19:22)
+[2016.05.05-11.19.22:657][413]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.19.22:665][413]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007856s)
+[2016.05.05-11.19.22:666][413]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.19.22:666][413]LogPlayLevel: PIE: World Init took: (0.000453s)
+[2016.05.05-11.19.22:666][413]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.008543s)
+[2016.05.05-11.19.22:684][413]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.19.22:687][413]LogInit: FAudioDevice initialized.
+[2016.05.05-11.19.22:716][413]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.19.22:721][413]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.19.22
+[2016.05.05-11.19.22:723][413]LogWorld: Bringing up level for play took: 0.006690
+[2016.05.05-11.19.22:730][413]PIE: 情報 /Game/UEDPIE_0_tes -0.466のプレイ イン エディタの開始時間
+[2016.05.05-11.19.22:730][413]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.19.57:222][499]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.19.57:270][499]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.19.58:092][571]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.20.01:573][870]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.20.07:296][406]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.20.08:117][482]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.20.15:462][172]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.20.17:977][396]Cmd: DELETE
+[2016.05.05-11.20.17:977][396]Cmd: ACTOR DELETE
+[2016.05.05-11.20.17:978][396]LogEditorActor: Deleted Actor: Brush
+[2016.05.05-11.20.18:009][396]LogEditorActor: Deleted 1 Actors (0.032 secs)
+[2016.05.05-11.20.20:110][582]Cmd: EDIT COPY
+[2016.05.05-11.20.20:350][603]Cmd: EDIT PASTE
+[2016.05.05-11.20.23:776][905]Cmd: EDIT COPY
+[2016.05.05-11.20.23:996][925]Cmd: EDIT PASTE
+[2016.05.05-11.20.28:417][329]LogEditorViewport: Clicking on Actor (LMB): Bat_BP_C (Bat_BP6)
+[2016.05.05-11.20.29:314][400]LogEditorViewport: Clicking on Actor (LMB): Bat_BP_C (Bat_BP4)
+[2016.05.05-11.20.36:854][ 83]LogEditorViewport: Clicking on Actor (LMB): Bat_BP_C (Bat_BP6)
+[2016.05.05-11.20.39:211][286]LogEditorViewport: Clicking on Actor (LMB): Bat_BP_C (Bat_BP5)
+[2016.05.05-11.20.48:244][105]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.20.48:244][105]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.20.48:244][105]PIE: New page: PIEセッション: tes (2016/05/06 5:20:48)
+[2016.05.05-11.20.48:244][105]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.20.48:251][105]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006867s)
+[2016.05.05-11.20.48:251][105]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.20.48:251][105]LogPlayLevel: PIE: World Init took: (0.000401s)
+[2016.05.05-11.20.48:251][105]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.007488s)
+[2016.05.05-11.20.48:268][105]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.20.48:271][105]LogInit: FAudioDevice initialized.
+[2016.05.05-11.20.48:297][105]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.20.48:302][105]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.20.48
+[2016.05.05-11.20.48:304][105]LogWorld: Bringing up level for play took: 0.006632
+[2016.05.05-11.20.48:311][105]PIE: 情報 /Game/UEDPIE_0_tes -0.885のプレイ イン エディタの開始時間
+[2016.05.05-11.20.48:311][105]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.21.09:767][634]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.21.09:875][634]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.21.16:342][ 57]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.21.25:339][769]LogSavePackage: Save=87.90ms
+[2016.05.05-11.21.25:339][769]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Spider_BP93D715504A4F9D4AA61FDA87C3B340FC.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/Enemys/Spider/Spider_BP.uasset'
+[2016.05.05-11.21.25:341][769]LogSavePackage: Total save time: 150.30ms
+[2016.05.05-11.21.25:341][769]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/Enemys/Spider/Spider_BP.uasset
+[2016.05.05-11.21.25:430][769]LogSavePackage: Save=57.89ms
+[2016.05.05-11.21.25:430][769]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/EnemyStatosWidget_BPFC80A9CE48BC5A5A6252BAA16AECBB38.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/UMG/EnemyStatosWidget_BP.uasset'
+[2016.05.05-11.21.25:432][769]LogSavePackage: Total save time: 79.86ms
+[2016.05.05-11.21.25:432][769]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/UMG/EnemyStatosWidget_BP.uasset
+[2016.05.05-11.21.25:482][769]LogSavePackage: Save=22.29ms
+[2016.05.05-11.21.25:482][769]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/WidgetScreenFunction_BP7EF9E6F4414FFC7B6DD2B39480533313.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/UMG/WidgetScreenFunction_BP.uasset'
+[2016.05.05-11.21.25:483][769]LogSavePackage: Total save time: 44.73ms
+[2016.05.05-11.21.25:483][769]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/UMG/WidgetScreenFunction_BP.uasset
+[2016.05.05-11.21.25:537][769]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.05-11.21.25:751][769]LogSavePackage: Save=179.08ms
+[2016.05.05-11.21.25:751][769]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/tesDBA6FDCD48955628F152E184AF07821C.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/tes.umap'
+[2016.05.05-11.21.25:753][769]LogSavePackage: Total save time: 201.47ms
+[2016.05.05-11.21.25:753][769]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/tes.umap
+[2016.05.05-11.21.25:829][769]LogFileHelpers: Saving map 'tes' took 0.344
+[2016.05.05-11.24.08:455][551]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.24.08:455][551]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.05-11.24.08:455][551]PIE: New page: PIEセッション: tes (2016/05/06 5:24:08)
+[2016.05.05-11.24.08:456][551]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.05-11.24.08:463][551]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007425s)
+[2016.05.05-11.24.08:463][551]LogAIModule: Creating AISystem for world tes
+[2016.05.05-11.24.08:463][551]LogPlayLevel: PIE: World Init took: (0.000459s)
+[2016.05.05-11.24.08:464][551]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.008064s)
+[2016.05.05-11.24.08:491][551]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.05-11.24.08:494][551]LogInit: FAudioDevice initialized.
+[2016.05.05-11.24.08:527][551]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.05-11.24.08:533][551]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.05-20.24.08
+[2016.05.05-11.24.08:536][551]LogWorld: Bringing up level for play took: 0.006942
+[2016.05.05-11.24.08:542][551]PIE: 情報 /Game/UEDPIE_0_tes -0.653のプレイ イン エディタの開始時間
+[2016.05.05-11.24.08:543][551]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.24.14:890][291]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.24.15:004][291]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.05-11.24.15:123][293]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 411/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-11.26.42:416][322]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-12.50.44:540][775]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 403/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.05-12.50.46:446][916]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.05-12.50.46:447][916]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.05-12.50.46:670][916]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.05-12.50.46:670][916]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.05-12.50.46:920][917]Cmd: QUIT_EDITOR
+[2016.05.05-12.50.47:850][917]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.05-12.50.47:851][917]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.05-12.50.47:898][917]LogExit: Preparing to exit.
+[2016.05.05-12.50.48:923][917]LogExit: Editor shut down
+[2016.05.05-12.50.48:925][917]LogExit: Transaction tracking system shut down
+[2016.05.05-12.50.49:240][917]LogObj: Freed 0b from 0 cluster array pools.
+[2016.05.05-12.50.49:240][917]LogExit: Object subsystem successfully closed.
+[2016.05.05-12.50.49:275][917]LogD3D11RHI: Shutdown
+[2016.05.05-12.50.49:275][917]LogD3D11RHI: CleanupD3DDevice
+[2016.05.05-12.50.49:444][917]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.05.05-12.50.49:493][917]LogDerivedDataCache: Shutdown
+[2016.05.05-12.50.49:533][917]LogModuleManager: Shutting down and abandoning module SequencerWidgets (207)
+[2016.05.05-12.50.49:533][917]LogModuleManager: Shutting down and abandoning module BlueprintGraph (206)
+[2016.05.05-12.50.49:533][917]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (205)
+[2016.05.05-12.50.49:533][917]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (204)
+[2016.05.05-12.50.49:533][917]LogModuleManager: Shutting down and abandoning module CrashTracker (203)
+[2016.05.05-12.50.49:533][917]LogModuleManager: Shutting down and abandoning module SuperSearch (202)
+[2016.05.05-12.50.49:533][917]LogModuleManager: Shutting down and abandoning module WidgetCarousel (201)
+[2016.05.05-12.50.49:533][917]LogModuleManager: Shutting down and abandoning module AddContentDialog (200)
+[2016.05.05-12.50.49:538][917]LogModuleManager: Shutting down and abandoning module GameplayTags (199)
+[2016.05.05-12.50.49:538][917]LogModuleManager: Shutting down and abandoning module EditorWidgets (198)
+[2016.05.05-12.50.49:538][917]LogModuleManager: Shutting down and abandoning module CollectionManager (197)
+[2016.05.05-12.50.49:539][917]LogModuleManager: Shutting down and abandoning module SceneOutliner (196)
+[2016.05.05-12.50.49:539][917]LogModuleManager: Shutting down and abandoning module StatsViewer (195)
+[2016.05.05-12.50.49:540][917]LogModuleManager: Shutting down and abandoning module FoliageEdit (194)
+[2016.05.05-12.50.49:540][917]LogModuleManager: Shutting down and abandoning module LandscapeEditor (193)
+[2016.05.05-12.50.49:541][917]LogModuleManager: Shutting down and abandoning module ActorPickerMode (192)
+[2016.05.05-12.50.49:541][917]LogModuleManager: Shutting down and abandoning module GeometryMode (191)
+[2016.05.05-12.50.49:541][917]LogModuleManager: Shutting down and abandoning module TextureAlignMode (190)
+[2016.05.05-12.50.49:541][917]LogModuleManager: Shutting down and abandoning module BspMode (189)
+[2016.05.05-12.50.49:541][917]LogModuleManager: Shutting down and abandoning module PlacementMode (188)
+[2016.05.05-12.50.49:541][917]LogModuleManager: Shutting down and abandoning module AutomationWorker (187)
+[2016.05.05-12.50.49:541][917]LogModuleManager: Shutting down and abandoning module CharacterAI (186)
+[2016.05.05-12.50.49:541][917]LogModuleManager: Shutting down and abandoning module SmartSnapping (185)
+[2016.05.05-12.50.49:541][917]LogModuleManager: Shutting down and abandoning module ViewportSnapping (184)
+[2016.05.05-12.50.49:541][917]LogModuleManager: Shutting down and abandoning module LogVisualizer (183)
+[2016.05.05-12.50.49:542][917]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (182)
+[2016.05.05-12.50.49:544][917]LogModuleManager: Shutting down and abandoning module IntroTutorials (181)
+[2016.05.05-12.50.49:544][917]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (180)
+[2016.05.05-12.50.49:544][917]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (179)
+[2016.05.05-12.50.49:545][917]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (178)
+[2016.05.05-12.50.49:545][917]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (177)
+[2016.05.05-12.50.50:037][917]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (176)
+[2016.05.05-12.50.50:037][917]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (175)
+[2016.05.05-12.50.50:037][917]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (174)
+[2016.05.05-12.50.50:037][917]LogModuleManager: Shutting down and abandoning module MergeActors (173)
+[2016.05.05-12.50.50:038][917]LogModuleManager: Shutting down and abandoning module SizeMap (172)
+[2016.05.05-12.50.50:038][917]LogModuleManager: Shutting down and abandoning module TreeMap (171)
+[2016.05.05-12.50.50:039][917]LogModuleManager: Shutting down and abandoning module ReferenceViewer (170)
+[2016.05.05-12.50.50:039][917]LogModuleManager: Shutting down and abandoning module LocalizationService (169)
+[2016.05.05-12.50.50:039][917]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (168)
+[2016.05.05-12.50.50:039][917]LogModuleManager: Shutting down and abandoning module HardwareTargeting (167)
+[2016.05.05-12.50.50:039][917]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (166)
+[2016.05.05-12.50.50:040][917]LogModuleManager: Shutting down and abandoning module UndoHistory (165)
+[2016.05.05-12.50.50:040][917]LogModuleManager: Shutting down and abandoning module UserFeedback (164)
+[2016.05.05-12.50.50:040][917]LogModuleManager: Shutting down and abandoning module XmlParser (163)
+[2016.05.05-12.50.50:040][917]LogModuleManager: Shutting down and abandoning module Blutility (162)
+[2016.05.05-12.50.50:040][917]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (161)
+[2016.05.05-12.50.50:041][917]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (160)
+[2016.05.05-12.50.50:041][917]LogModuleManager: Shutting down and abandoning module InputBindingEditor (159)
+[2016.05.05-12.50.50:041][917]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (158)
+[2016.05.05-12.50.50:042][917]LogModuleManager: Shutting down and abandoning module SettingsEditor (157)
+[2016.05.05-12.50.50:043][917]LogModuleManager: Shutting down and abandoning module ProjectLauncher (156)
+[2016.05.05-12.50.50:043][917]LogModuleManager: Shutting down and abandoning module SessionFrontend (155)
+[2016.05.05-12.50.50:044][917]LogModuleManager: Shutting down and abandoning module ProfilerClient (154)
+[2016.05.05-12.50.50:044][917]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (153)
+[2016.05.05-12.50.50:044][917]LogModuleManager: Shutting down and abandoning module DeviceManager (152)
+[2016.05.05-12.50.50:087][917]LogModuleManager: Shutting down and abandoning module AutomationController (151)
+[2016.05.05-12.50.50:088][917]LogModuleManager: Shutting down and abandoning module AutomationWindow (150)
+[2016.05.05-12.50.50:089][917]LogModuleManager: Shutting down and abandoning module Layers (149)
+[2016.05.05-12.50.50:090][917]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (148)
+[2016.05.05-12.50.50:090][917]LogModuleManager: Shutting down and abandoning module DetailCustomizations (147)
+[2016.05.05-12.50.50:091][917]LogModuleManager: Shutting down and abandoning module PackagesDialog (146)
+[2016.05.05-12.50.50:091][917]LogModuleManager: Shutting down and abandoning module Persona (145)
+[2016.05.05-12.50.50:092][917]LogModuleManager: Shutting down and abandoning module Kismet (144)
+[2016.05.05-12.50.50:092][917]LogModuleManager: Shutting down and abandoning module GraphEditor (143)
+[2016.05.05-12.50.50:092][917]LogModuleManager: Shutting down and abandoning module ClassViewer (142)
+[2016.05.05-12.50.50:092][917]LogModuleManager: Shutting down and abandoning module Toolbox (141)
+[2016.05.05-12.50.50:092][917]LogModuleManager: Shutting down and abandoning module ModuleUI (140)
+[2016.05.05-12.50.50:093][917]LogModuleManager: Shutting down and abandoning module MovieSceneTools (139)
+[2016.05.05-12.50.50:093][917]LogModuleManager: Shutting down and abandoning module OutputLog (138)
+[2016.05.05-12.50.50:094][917]LogModuleManager: Shutting down and abandoning module GammaUI (137)
+[2016.05.05-12.50.50:094][917]LogModuleManager: Shutting down and abandoning module Documentation (136)
+[2016.05.05-12.50.50:094][917]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (135)
+[2016.05.05-12.50.50:094][917]LogModuleManager: Shutting down and abandoning module AnalyticsET (134)
+[2016.05.05-12.50.50:094][917]LogModuleManager: Shutting down and abandoning module Analytics (133)
+[2016.05.05-12.50.50:094][917]LogModuleManager: Shutting down and abandoning module PortalServices (132)
+[2016.05.05-12.50.50:094][917]LogModuleManager: Shutting down and abandoning module PortalRpc (131)
+[2016.05.05-12.50.50:094][917]LogModuleManager: Shutting down and abandoning module MessagingRpc (130)
+[2016.05.05-12.50.50:094][917]LogModuleManager: Shutting down and abandoning module AITestSuite (129)
+[2016.05.05-12.50.50:095][917]LogModuleManager: Shutting down and abandoning module GameplayDebugger (128)
+[2016.05.05-12.50.50:095][917]LogModuleManager: Shutting down and abandoning module AIModule (127)
+[2016.05.05-12.50.50:095][917]LogModuleManager: Shutting down and abandoning module ProfilerService (126)
+[2016.05.05-12.50.50:314][917]LogModuleManager: Shutting down and abandoning module TaskGraph (125)
+[2016.05.05-12.50.50:315][917]LogModuleManager: Shutting down and abandoning module SlateRemote (124)
+[2016.05.05-12.50.50:315][917]LogModuleManager: Shutting down and abandoning module SteamVRController (123)
+[2016.05.05-12.50.50:315][917]LogModuleManager: Shutting down and abandoning module SteamVR (122)
+[2016.05.05-12.50.50:315][917]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (121)
+[2016.05.05-12.50.50:315][917]LogModuleManager: Shutting down and abandoning module OculusLibrary (120)
+[2016.05.05-12.50.50:315][917]LogModuleManager: Shutting down and abandoning module OculusInput (119)
+[2016.05.05-12.50.50:316][917]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (118)
+[2016.05.05-12.50.50:316][917]LogModuleManager: Shutting down and abandoning module CableComponent (117)
+[2016.05.05-12.50.50:316][917]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (116)
+[2016.05.05-12.50.50:316][917]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (115)
+[2016.05.05-12.50.50:317][917]LogModuleManager: Shutting down and abandoning module HTML5Networking (114)
+[2016.05.05-12.50.50:317][917]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (113)
+[2016.05.05-12.50.50:317][917]LogModuleManager: Shutting down and abandoning module PluginBrowser (112)
+[2016.05.05-12.50.50:318][917]LogModuleManager: Shutting down and abandoning module EpicSurvey (111)
+[2016.05.05-12.50.50:318][917]LogModuleManager: Shutting down and abandoning module DesktopPlatform (110)
+[2016.05.05-12.50.50:319][917]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (109)
+[2016.05.05-12.50.50:319][917]LogModuleManager: Shutting down and abandoning module UObjectPlugin (108)
+[2016.05.05-12.50.50:319][917]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (107)
+[2016.05.05-12.50.50:320][917]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (106)
+[2016.05.05-12.50.50:320][917]LogModuleManager: Shutting down and abandoning module SourceControl (105)
+[2016.05.05-12.50.50:321][917]LogModuleManager: Shutting down and abandoning module GitSourceControl (104)
+[2016.05.05-12.50.50:321][917]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (103)
+[2016.05.05-12.50.50:321][917]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (102)
+[2016.05.05-12.50.50:322][917]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (101)
+[2016.05.05-12.50.50:322][917]LogModuleManager: Shutting down and abandoning module MeshPaint (100)
+[2016.05.05-12.50.50:322][917]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.05.05-12.50.50:322][917]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.05.05-12.50.50:323][917]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.05.05-12.50.50:324][917]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (96)
+[2016.05.05-12.50.50:328][917]LogModuleManager: Shutting down and abandoning module AssetRegistry (95)
+[2016.05.05-12.50.50:484][917]LogModuleManager: Shutting down and abandoning module ContentBrowser (94)
+[2016.05.05-12.50.50:486][917]LogModuleManager: Shutting down and abandoning module Paper2DEditor (93)
+[2016.05.05-12.50.50:486][917]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.05.05-12.50.50:587][917]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.05.05-12.50.50:587][917]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.05.05-12.50.50:587][917]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.05.05-12.50.50:587][917]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.05.05-12.50.50:587][917]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.05.05-12.50.50:588][917]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.05.05-12.50.50:588][917]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.05.05-12.50.50:588][917]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.05.05-12.50.50:588][917]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.05.05-12.50.50:588][917]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.05.05-12.50.50:588][917]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.05.05-12.50.50:588][917]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.05.05-12.50.50:589][917]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.05.05-12.50.50:589][917]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.05.05-12.50.50:590][917]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.05.05-12.50.50:590][917]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.05.05-12.50.50:590][917]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.05.05-12.50.50:590][917]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.05.05-12.50.50:591][917]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.05.05-12.50.50:591][917]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.05.05-12.50.50:591][917]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.05.05-12.50.50:593][917]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.05.05-12.50.50:593][917]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.05.05-12.50.50:595][917]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.05.05-12.50.50:595][917]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.05.05-12.50.50:595][917]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.05.05-12.50.50:595][917]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.05.05-12.50.50:595][917]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.05.05-12.50.50:595][917]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.05.05-12.50.50:595][917]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.05.05-12.50.50:595][917]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.05.05-12.50.50:595][917]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.05.05-12.50.50:595][917]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.05.05-12.50.50:596][917]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.05.05-12.50.50:596][917]LogDerivedDataCache: Shutdown
+[2016.05.05-12.50.50:596][917]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.05.05-12.50.50:596][917]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.05.05-12.50.50:596][917]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.05.05-12.50.50:597][917]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.05.05-12.50.50:598][917]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.05.05-12.50.51:599][917]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.05.05-12.50.51:601][917]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.05.05-12.50.51:602][917]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.05.05-12.50.51:602][917]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.05.05-12.50.51:602][917]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.05.05-12.50.51:602][917]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.05.05-12.50.51:602][917]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.05.05-12.50.51:631][917]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.05.05-12.50.51:631][917]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.05.05-12.50.51:631][917]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.05.05-12.50.51:631][917]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.05.05-12.50.51:631][917]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.05.05-12.50.51:631][917]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.05.05-12.50.51:631][917]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.05.05-12.50.51:632][917]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.05.05-12.50.51:632][917]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.05.05-12.50.51:632][917]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.05.05-12.50.51:634][917]LogExit: Exiting.
+[2016.05.05-12.50.51:638][917]Log file closed, 05/05/16 21:50:51

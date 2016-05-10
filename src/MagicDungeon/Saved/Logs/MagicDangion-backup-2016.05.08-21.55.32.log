@@ -1,0 +1,723 @@
+﻿Log file open, 05/08/16 21:41:08
+LogInit:Display: Running engine for game: MagicDangion
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1737874744) SRandInit(-1737874743).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.060771
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.05.08-12.41.08:169][  0]LogInit: Selected Device Profile: [Windows]
+[2016.05.08-12.41.08:169][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.05.08-12.41.08:176][  0]LogInit: Computer: LIGHT
+[2016.05.08-12.41.08:176][  0]LogInit: User: EllightDunois
+[2016.05.08-12.41.08:176][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.05.08-12.41.08:176][  0]LogInit: High frequency timer resolution =3.906254 MHz
+[2016.05.08-12.41.08:176][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.05.08-12.41.08:176][  0]LogMemory: Platform Memory Stats for Windows
+[2016.05.08-12.41.08:176][  0]LogMemory: Process Physical Memory: 314.36 MB used, 314.36 MB peak
+[2016.05.08-12.41.08:176][  0]LogMemory: Process Virtual Memory: 314.79 MB used, 314.79 MB peak
+[2016.05.08-12.41.08:176][  0]LogMemory: Physical Memory: 4058.56 MB used, 8133.65 MB total
+[2016.05.08-12.41.08:176][  0]LogMemory: Virtual Memory: 652.86 MB used, 134217728.00 MB total
+[2016.05.08-12.41.08:199][  0]LogTextLocalizationManager: No specific translations for ('ja-JP') exist, so ('ja') translations will be used.
+[2016.05.08-12.41.08:253][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:false):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (816077464) Localized String: (偽)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (816077464) Localized String: (false)
+[2016.05.08-12.41.08:253][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:true):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-942328987) Localized String: (真)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (-942328987) Localized String: (true)
+[2016.05.08-12.41.08:253][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (再生が最後まで終わった後、ロープ再生するようにしますか？)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2133979316) Localized String: (ループが最後まで到達した時に、アニメーションのループを継続するべきか？)
+[2016.05.08-12.41.08:253][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースで値を取得するX座標)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースでサンプリングするX座標)
+[2016.05.08-12.41.08:253][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースで値を取得するY座標)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースでサンプリングするY座標)
+[2016.05.08-12.41.08:253][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースで値を取得するZ座標)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースでサンプリングするZ座標)
+[2016.05.08-12.41.08:253][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (再生するブレンドスペースのアセット)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1599043277) Localized String: (再生するブレンド空間アセット)
+[2016.05.08-12.41.08:253][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (このマシーンで1フレームあたりに同時に処理できるトランジションの最大数)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1567650430) Localized String: (単一フレームでマシーンが「同時」に受け取れる遷移の最大数)
+[2016.05.08-12.41.08:253][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (再生速度の倍率です。負の数値も使う事ができます。その場合逆再生になります。)
+Localization Resource: (C:/Program Files/Epic Games/4.11/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (再生レート乗数。アニメーションを逆再生する負の値にすることができます。)
+[2016.05.08-12.41.08:362][  0]LogD3D11RHI: D3D11 adapters:
+[2016.05.08-12.41.08:371][  0]LogD3D11RHI:    0. 'AMD Radeon R9 200 Series' (Feature Level 11_0)
+[2016.05.08-12.41.08:371][  0]LogD3D11RHI:       4074MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 1 output[s]
+[2016.05.08-12.41.08:372][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.05.08-12.41.08:372][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4066MB of shared system memory, 0 output[s]
+[2016.05.08-12.41.08:372][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.05.08-12.41.08:375][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.05.08-12.41.08:375][  0]LogD3D11RHI:     Adapter Name: AMD Radeon R9 200 Series
+[2016.05.08-12.41.08:375][  0]LogD3D11RHI:   Driver Version: Catalyst 15.8 (internal 16.150.2211.0)
+[2016.05.08-12.41.08:375][  0]LogD3D11RHI:      Driver Date: 3-21-2016
+[2016.05.08-12.41.08:375][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.05.08-12.41.08:379][  0]LogD3D11RHI: Async texture creation disabled: no driver support
+[2016.05.08-12.41.08:389][  0]LogShaderCompilers: Guid format shader working directory is -52 characters bigger than the processId version (../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Intermediate/Shaders/WorkingDirectory/6816/).
+[2016.05.08-12.41.08:389][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/ELLIGH~1/AppData/Local/Temp/UnrealShaderWorkingDir/924C158340FAFD4CC13D0199695ED790/'.
+[2016.05.08-12.41.08:389][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.05.08-12.41.09:053][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.05.08-12.41.09:056][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.05.08-12.41.09:059][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.05.08-12.41.09:065][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.05.08-12.41.09:069][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.05.08-12.41.09:072][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.05.08-12.41.09:074][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.05.08-12.41.09:076][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.05.08-12.41.09:078][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.05.08-12.41.09:080][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.05.08-12.41.09:082][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.05.08-12.41.09:086][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.05.08-12.41.09:086][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.05.08-12.41.09:086][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.05.08-12.41.09:101][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.05.08-12.41.09:103][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.05.08-12.41.09:105][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.05.08-12.41.09:107][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.05.08-12.41.09:109][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.05.08-12.41.09:109][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.05.08-12.41.09:152][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.05.08-12.41.09:188][  0]LogDerivedDataCache: Loaded boot cache 0.04s 46MB C:/Users/EllightDunois/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.05.08-12.41.09:188][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/EllightDunois/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.05.08-12.41.09:188][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.05.08-12.41.09:188][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.05.08-12.41.09:188][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.05.08-12.41.09:188][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.05.08-12.41.09:198][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.05.08-12.41.09:209][  0]LogDerivedDataCache: Using Local data cache path C:/Users/EllightDunois/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.05.08-12.41.09:311][  0]LogInit: Selected Device Profile: [Windows]
+[2016.05.08-12.41.09:312][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.05.08-12.41.09:334][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.05.08-12.41.09:410][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.05.08-12.41.09:410][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.05.08-12.41.09:410][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.05.08-12.41.09:576][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.05.08-12.41.09:576][  0]LogUObjectAllocator: 5591592 out of 0 bytes used by permanent object pool.
+[2016.05.08-12.41.09:576][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.05.08-12.41.09:581][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.05.08-12.41.09:633][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.05.08-12.41.09:634][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.05.08-12.41.09:695][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.05.08-12.41.09:695][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.05.08-12.41.09:695][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.05.08-12.41.09:695][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.05.08-12.41.09:695][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.05.08-12.41.09:695][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.05.08-12.41.10:053][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.05.08-12.41.10:159][  0]LogAssetRegistry: FAssetRegistry took 0.0211 seconds to start up
+[2016.05.08-12.41.10:252][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.05.08-12.41.10:275][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.05.08-12.41.10:280][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.05.08-12.41.10:284][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.05.08-12.41.10:344][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2016.05.08-12.41.10:390][  0]LogEngine: Initializing Engine...
+[2016.05.08-12.41.10:471][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.05.08-12.41.10:476][  0]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.08-12.41.10:480][  0]LogInit: FAudioDevice initialized.
+[2016.05.08-12.41.10:500][  0]LogDerivedDataCache: Saved boot cache 0.02s 46MB C:/Users/EllightDunois/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.05.08-12.41.10:505][  0]LogInit: Texture streaming: Enabled
+[2016.05.08-12.41.10:517][  0]LogInit: Transaction tracking system initialized
+[2016.05.08-12.41.10:529][  0]BlueprintLog: New page: エディタの読み込み
+[2016.05.08-12.41.10:569][  0]LocalizationService: 情報 ローカライズのサービスが無効になりました
+[2016.05.08-12.41.10:615][  0]LogConsoleResponse:Display: 
+[2016.05.08-12.41.10:679][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.05.08-12.41.10:679][  0]LogCook:Display: Mobile HDR setting 1
+[2016.05.08-12.41.10:679][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.05.08-12.41.10:707][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/' took 0.01s
+[2016.05.08-12.41.10:707][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.05.08-12.41.10:708][  0]Cmd: MAP LOAD FILE="../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/tes.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.05.08-12.41.10:708][  0]LightingResults: New page: ライティングのビルド
+[2016.05.08-12.41.10:709][  0]MapCheck: New page: マップをチェック
+[2016.05.08-12.41.10:709][  0]LightingResults: New page: <何も選択されていません>
+[2016.05.08-12.41.11:067][  0]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Scene' in BlueprintGeneratedClass 'REINST_Attack_BP_C_50' (it may have been removed)
+[2016.05.08-12.41.12:715][  0]LogAIModule: Creating AISystem for world tes
+[2016.05.08-12.41.12:723][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.05.08-12.41.12:724][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.05.08-12.41.12:768][  0]MapCheck: 情報 マップチェックが完了: 0 エラー、 0 警告、完了に 43.738ミリ秒かかりました。
+[2016.05.08-12.41.12:768][  0]LogFileHelpers: Loading map 'tes' took 2.060
+[2016.05.08-12.41.12:858][  0]LogCollectionManager: Loaded 0 collections in 0.000953 seconds
+[2016.05.08-12.41.12:895][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Collections/' took 0.01s
+[2016.05.08-12.41.12:895][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/Developers/EllightDunois/Collections/' took 0.01s
+[2016.05.08-12.41.12:895][  0]LogFileCache: Scanning file cache for directory 'C:/Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/Collections/' took 0.01s
+[2016.05.08-12.41.12:895][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.05.08-12.41.12:900][  0]LogContentBrowser: Native class hierarchy populated in 0.0050 seconds. Added 1980 classes and 345 folders.
+[2016.05.08-12.41.12:903][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.05.08-12.41.12:903][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.05.08-12.41.12:903][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0003 seconds. Added 12 classes and 0 folders.
+[2016.05.08-12.41.12:907][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.05.08-12.41.12:911][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2016.05.08-12.41.12:932][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2016.05.08-12.41.12:986][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.05.08-12.41.12:988][  0]LogUObjectGlobals:Warning: オブジェクト 'Class なし.' が見つかりませんでした
+[2016.05.08-12.41.13:013][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2016.05.08-12.41.13:013][  0]LogLoad: Full Startup: 5.37 seconds (BP compile: 0.35 seconds)
+[2016.05.08-12.41.13:013][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.05.08-12.41.13:013][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.05.08-12.41.13:059][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.08-12.41.13:059][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.08-12.41.13:061][  0]LogOcInput: OculusInput pre-init called
+[2016.05.08-12.41.13:098][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.05.08-12.41.13:216][  0]LogRenderer: Reallocating scene render targets to support 2248x884 (Frame:2).
+[2016.05.08-12.41.13:443][  1]LogAssetRegistry: Asset discovery search completed in 3.3060 seconds
+[2016.05.08-12.41.13:443][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.05.08-12.41.13:443][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000014 seconds (updated 0 objects)
+[2016.05.08-12.41.54:071][115]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 108 classes and 0 folders.
+[2016.05.08-12.42.40:661][406]BlueprintLog: New page: Enventry_BP をコンパイル
+[2016.05.08-12.42.40:664][406]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.42.40:664][406]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_0) Not registered. Aborting.
+[2016.05.08-12.42.40:664][406]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_1) Not registered. Aborting.
+[2016.05.08-12.42.40:664][406]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_2) Not registered. Aborting.
+[2016.05.08-12.42.40:835][406]BlueprintEditorCompileResults: 情報 [0093.19] Enventry_BP のコンパイルに成功しました！  [ 174 ミリ秒]
+[2016.05.08-12.44.59:237][860]BlueprintLog: New page: Marisa_BP をコンパイル
+[2016.05.08-12.44.59:521][860]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.44.59:613][860]BlueprintEditorCompileResults: 情報 [0231.97] Marisa_BP のコンパイルに成功しました！  [ 375 ミリ秒]
+[2016.05.08-12.45.22:785][689]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CreateWidget /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CreateWidget_8 or K2Node_CreateWidget /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_CreateWidget_8
+[2016.05.08-12.45.22:785][689]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CreateWidget_8.EdGraphPin_53732) from referencer (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_InputAction_10.EdGraphPin_53252).  Import failed...
+[2016.05.08-12.45.22:785][689]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CreateWidget_8.EdGraphPin_53732''
+[2016.05.08-12.46.02:540][781]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.05.08-12.46.02:810][781]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.46.02:811][781]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_3) Not registered. Aborting.
+[2016.05.08-12.46.02:811][781]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_4) Not registered. Aborting.
+[2016.05.08-12.46.02:811][781]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_5) Not registered. Aborting.
+[2016.05.08-12.46.03:020][781]BlueprintEditorCompileResults: 情報 [0295.38] ButtleGameMode_BP のコンパイルに成功しました！  [ 480 ミリ秒]
+[2016.05.08-12.46.10:266][429]BlueprintLog: New page: Enventry_BP をコンパイル
+[2016.05.08-12.46.10:275][429]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.46.10:275][429]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_6) Not registered. Aborting.
+[2016.05.08-12.46.10:275][429]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_7) Not registered. Aborting.
+[2016.05.08-12.46.10:275][429]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_8) Not registered. Aborting.
+[2016.05.08-12.46.10:390][429]BlueprintEditorCompileResults: 情報 [0302.74] Enventry_BP のコンパイルに成功しました！  [ 123 ミリ秒]
+[2016.05.08-12.46.12:112][586]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.12:112][586]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.08-12.46.12:113][586]PIE: New page: PIEセッション: tes (2016/05/09 6:46:12)
+[2016.05.08-12.46.12:113][586]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.08-12.46.12:121][586]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008589s)
+[2016.05.08-12.46.12:122][586]LogAIModule: Creating AISystem for world tes
+[2016.05.08-12.46.12:122][586]LogPlayLevel: PIE: World Init took: (0.000398s)
+[2016.05.08-12.46.12:122][586]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.009179s)
+[2016.05.08-12.46.12:139][586]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.08-12.46.12:142][586]LogInit: FAudioDevice initialized.
+[2016.05.08-12.46.12:185][586]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.08-12.46.12:192][586]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.08-21.46.12
+[2016.05.08-12.46.12:196][586]LogWorld: Bringing up level for play took: 0.009783
+[2016.05.08-12.46.12:199][586]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 9 classes and 0 folders.
+[2016.05.08-12.46.12:203][586]PIE: 情報 /Game/UEDPIE_0_tes -0.62のプレイ イン エディタの開始時間
+[2016.05.08-12.46.12:203][586]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.12:261][587]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 410/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.46.16:356][ 77]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.16:392][ 77]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.16:451][ 78]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.46.18:292][152]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.46.37:042][814]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.05.08-12.46.37:092][814]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.46.37:172][814]BlueprintEditorCompileResults: 情報 [0329.53] ButtleGameMode_BP のコンパイルに成功しました！  [ 129 ミリ秒]
+[2016.05.08-12.46.39:036][979]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.39:036][979]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.08-12.46.39:036][979]PIE: New page: PIEセッション: tes (2016/05/09 6:46:39)
+[2016.05.08-12.46.39:036][979]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.08-12.46.39:044][979]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008197s)
+[2016.05.08-12.46.39:044][979]LogAIModule: Creating AISystem for world tes
+[2016.05.08-12.46.39:044][979]LogPlayLevel: PIE: World Init took: (0.000411s)
+[2016.05.08-12.46.39:045][979]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.008787s)
+[2016.05.08-12.46.39:045][979]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.46.39:062][979]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.08-12.46.39:065][979]LogInit: FAudioDevice initialized.
+[2016.05.08-12.46.39:097][979]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.08-12.46.39:103][979]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.08-21.46.39
+[2016.05.08-12.46.39:107][979]LogWorld: Bringing up level for play took: 0.009270
+[2016.05.08-12.46.39:111][979]PIE: 情報 /Game/UEDPIE_0_tes 0.288のプレイ イン エディタの開始時間
+[2016.05.08-12.46.39:112][979]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.43:048][446]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.43:082][446]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.43:135][447]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.46.44:874][501]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.46.50:819][ 28]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.05.08-12.46.50:871][ 28]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.46.50:956][ 28]BlueprintEditorCompileResults: 情報 [0343.31] ButtleGameMode_BP のコンパイルに成功しました！  [ 136 ミリ秒]
+[2016.05.08-12.46.52:600][173]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.52:600][173]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.08-12.46.52:600][173]PIE: New page: PIEセッション: tes (2016/05/09 6:46:52)
+[2016.05.08-12.46.52:600][173]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.08-12.46.52:608][173]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007951s)
+[2016.05.08-12.46.52:608][173]LogAIModule: Creating AISystem for world tes
+[2016.05.08-12.46.52:608][173]LogPlayLevel: PIE: World Init took: (0.000414s)
+[2016.05.08-12.46.52:608][173]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.008538s)
+[2016.05.08-12.46.52:608][173]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.46.52:626][173]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.08-12.46.52:629][173]LogInit: FAudioDevice initialized.
+[2016.05.08-12.46.52:660][173]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.08-12.46.52:666][173]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.08-21.46.52
+[2016.05.08-12.46.52:670][173]LogWorld: Bringing up level for play took: 0.009225
+[2016.05.08-12.46.52:674][173]PIE: 情報 /Game/UEDPIE_0_tes -0.149のプレイ イン エディタの開始時間
+[2016.05.08-12.46.52:674][173]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.53:736][295]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.53:767][295]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.46.53:823][296]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.46.55:588][352]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.47.11:139][759]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.05.08-12.47.11:184][759]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.47.11:264][759]BlueprintEditorCompileResults: 情報 [0363.62] ButtleGameMode_BP のコンパイルに成功しました！  [ 124 ミリ秒]
+[2016.05.08-12.47.13:425][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117 or K2Node_IfThenElse /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117
+[2016.05.08-12.47.13:425][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117.EdGraphPin_56965) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_InputAction_10.EdGraphPin_56844).  Import failed...
+[2016.05.08-12.47.13:425][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_117.EdGraphPin_56965''
+[2016.05.08-12.47.13:426][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableSet_286 or K2Node_VariableSet /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_VariableSet_286
+[2016.05.08-12.47.13:426][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableSet_286.EdGraphPin_56941) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CreateWidget_8.EdGraphPin_60047).  Import failed...
+[2016.05.08-12.47.13:426][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableSet_286.EdGraphPin_56941''
+[2016.05.08-12.47.13:426][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableSet_286 or K2Node_VariableSet /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_VariableSet_286
+[2016.05.08-12.47.13:426][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableSet_286.EdGraphPin_56939) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CreateWidget_8.EdGraphPin_60045).  Import failed...
+[2016.05.08-12.47.13:426][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableSet_286.EdGraphPin_56939''
+[2016.05.08-12.47.13:426][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117 or K2Node_IfThenElse /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117
+[2016.05.08-12.47.13:426][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117.EdGraphPin_56968) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CreateWidget_8.EdGraphPin_60044).  Import failed...
+[2016.05.08-12.47.13:426][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_117.EdGraphPin_56968''
+[2016.05.08-12.47.13:426][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/BluePrints/Magics/Tolnade_small_BP.Tolnade_small_BP:EventGraph.K2Node_CallFunction_4082 or K2Node_CallFunction /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_CallFunction_4082
+[2016.05.08-12.47.13:426][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/BluePrints/Magics/Tolnade_small_BP.Tolnade_small_BP:EventGraph.K2Node_CallFunction_4082 or K2Node_CallFunction /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CallFunction_4082
+[2016.05.08-12.47.13:426][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_CallFunction_4082.EdGraphPin_56963) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_VariableGet_769.EdGraphPin_56944).  Import failed...
+[2016.05.08-12.47.13:426][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_4082.EdGraphPin_56963''
+[2016.05.08-12.47.13:426][930]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117 or K2Node_IfThenElse /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117
+[2016.05.08-12.47.13:426][930]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117.EdGraphPin_56966) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CallFunction_4082.EdGraphPin_56964).  Import failed...
+[2016.05.08-12.47.13:426][930]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_117.EdGraphPin_56966''
+[2016.05.08-12.47.13:450][930]LogBlueprint:Warning: [Marisa_BP] CreatePinForVariable: 'enventry' variable not found. Base class was probably changed.
+[2016.05.08-12.47.13:450][930]LogBlueprint:Warning: [Marisa_BP] CreatePinForVariable: 'enventry' variable not found. Base class was probably changed.
+[2016.05.08-12.47.13:450][930]LogBlueprint:Warning: [Marisa_BP] CreatePinForVariable: 'enventry' variable not found. Base class was probably changed.
+[2016.05.08-12.47.16:195][160]BlueprintLog: New page: Marisa_BP をコンパイル
+[2016.05.08-12.47.16:322][160]LogBlueprint:Warning: [compiler Marisa_BP] 警告 'enventry' に "Marisa_BP_C" という名前の変数はありません。
+ 'Marisa_BP_C' が  enventry を取得  用にコンパイルされていることを確認してください。
+[2016.05.08-12.47.16:322][160]LogBlueprint:Warning: [compiler Marisa_BP] 警告 'enventry' に "Marisa_BP_C" という名前の変数はありません。
+ 'Marisa_BP_C' が  enventry を設定  用にコンパイルされていることを確認してください。
+[2016.05.08-12.47.16:326][160]LogBlueprint:Error: [compiler Marisa_BP] エラー  Enventry  に関連付けられたプロパティが見つかりませんでした
+[2016.05.08-12.47.16:326][160]LogBlueprint:Error: [compiler Marisa_BP] エラー  Enventry  に関連付けられたプロパティが見つかりませんでした
+[2016.05.08-12.47.16:509][160]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.47.16:673][160]LogBlueprint:Warning: [compiler Marisa_BP] 警告 [0369.03] Marisa_BP のコンパイルに失敗しました。 2 致命的な問題 2 警告 [ 478 ミリ秒]
+[2016.05.08-12.47.16:673][160]BlueprintEditorCompileResults:Warning: 警告 'enventry' に "Marisa_BP_C" という名前の変数はありません。
+ 'Marisa_BP_C' が  enventry を取得  用にコンパイルされていることを確認してください。
+[2016.05.08-12.47.16:673][160]BlueprintEditorCompileResults:Warning: 警告 'enventry' に "Marisa_BP_C" という名前の変数はありません。
+ 'Marisa_BP_C' が  enventry を設定  用にコンパイルされていることを確認してください。
+[2016.05.08-12.47.16:673][160]BlueprintEditorCompileResults:Error: エラー  Enventry  に関連付けられたプロパティが見つかりませんでした
+[2016.05.08-12.47.16:673][160]BlueprintEditorCompileResults:Error: エラー  Enventry  に関連付けられたプロパティが見つかりませんでした
+[2016.05.08-12.47.16:673][160]BlueprintEditorCompileResults:Warning: 警告 [0369.03] Marisa_BP のコンパイルに失敗しました。 2 致命的な問題 2 警告 [ 478 ミリ秒]
+[2016.05.08-12.47.17:568][221]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.47.17:568][221]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_9) Not registered. Aborting.
+[2016.05.08-12.47.17:568][221]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_10) Not registered. Aborting.
+[2016.05.08-12.47.17:568][221]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_11) Not registered. Aborting.
+[2016.05.08-12.47.20:716][461]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_12) Not registered. Aborting.
+[2016.05.08-12.47.28:228][981]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_13) Not registered. Aborting.
+[2016.05.08-12.47.29:175][984]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.47.32:062][257]BlueprintLog: New page: Marisa_BP をコンパイル
+[2016.05.08-12.47.32:331][257]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_14) Not registered. Aborting.
+[2016.05.08-12.47.32:495][257]BlueprintEditorCompileResults: 情報 [0384.85] Marisa_BP のコンパイルに成功しました！  [ 432 ミリ秒]
+[2016.05.08-12.47.41:551][ 63]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.05.08-12.47.41:596][ 63]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.47.41:596][ 63]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_15) Not registered. Aborting.
+[2016.05.08-12.47.41:596][ 63]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_16) Not registered. Aborting.
+[2016.05.08-12.47.41:596][ 63]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_17) Not registered. Aborting.
+[2016.05.08-12.47.41:754][ 63]BlueprintEditorCompileResults: 情報 [0394.11] ButtleGameMode_BP のコンパイルに成功しました！  [ 203 ミリ秒]
+[2016.05.08-12.47.50:445][824]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.47.50:446][824]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.08-12.47.50:446][824]PIE: New page: PIEセッション: tes (2016/05/09 6:47:50)
+[2016.05.08-12.47.50:446][824]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.08-12.47.50:454][824]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008376s)
+[2016.05.08-12.47.50:455][824]LogAIModule: Creating AISystem for world tes
+[2016.05.08-12.47.50:455][824]LogPlayLevel: PIE: World Init took: (0.000480s)
+[2016.05.08-12.47.50:455][824]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.009059s)
+[2016.05.08-12.47.50:455][824]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.47.50:473][824]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.08-12.47.50:476][824]LogInit: FAudioDevice initialized.
+[2016.05.08-12.47.50:508][824]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.08-12.47.50:515][824]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.08-21.47.50
+[2016.05.08-12.47.50:518][824]LogWorld: Bringing up level for play took: 0.009253
+[2016.05.08-12.47.50:522][824]PIE: 情報 /Game/UEDPIE_0_tes -0.301のプレイ イン エディタの開始時間
+[2016.05.08-12.47.50:522][824]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.47.53:419][164]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.47.53:451][164]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.47.53:504][165]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.47.55:349][233]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.48.01:540][714]BlueprintLog: New page: Marisa_BP をコンパイル
+[2016.05.08-12.48.01:817][714]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.48.01:922][714]BlueprintEditorCompileResults: 情報 [0414.28] Marisa_BP のコンパイルに成功しました！  [ 381 ミリ秒]
+[2016.05.08-12.48.03:627][850]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.48.03:627][850]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.05.08-12.48.03:627][850]PIE: New page: PIEセッション: tes (2016/05/09 6:48:03)
+[2016.05.08-12.48.03:627][850]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_tes
+[2016.05.08-12.48.03:635][850]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007857s)
+[2016.05.08-12.48.03:635][850]LogAIModule: Creating AISystem for world tes
+[2016.05.08-12.48.03:635][850]LogPlayLevel: PIE: World Init took: (0.000398s)
+[2016.05.08-12.48.03:635][850]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/tes.tes to /Game/UEDPIE_0_tes.tes (0.008431s)
+[2016.05.08-12.48.03:635][850]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.48.03:635][850]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_18) Not registered. Aborting.
+[2016.05.08-12.48.03:635][850]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_19) Not registered. Aborting.
+[2016.05.08-12.48.03:635][850]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_20) Not registered. Aborting.
+[2016.05.08-12.48.03:652][850]LogInit: XAudio2 using 'SPDIF出力 (SB Recon3D PCIe)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.05.08-12.48.03:654][850]LogInit: FAudioDevice initialized.
+[2016.05.08-12.48.03:682][850]LogWorld: Game class is 'ButtleGameMode_BP_C'
+[2016.05.08-12.48.03:689][850]LogWorld: Bringing World /Game/UEDPIE_0_tes.tes up for play (max tick rate 0) at 2016.05.08-21.48.03
+[2016.05.08-12.48.03:692][850]LogWorld: Bringing up level for play took: 0.009280
+[2016.05.08-12.48.03:696][850]PIE: 情報 /Game/UEDPIE_0_tes 0.873のプレイ イン エディタの開始時間
+[2016.05.08-12.48.03:696][850]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.48.03:972][875]LogBlueprintUserMessages: [Marisa_BP_C_15] Hello
+[2016.05.08-12.48.04:197][902]LogBlueprintUserMessages: [Marisa_BP_C_15] Hello
+[2016.05.08-12.48.04:364][922]LogBlueprintUserMessages: [Marisa_BP_C_15] Hello
+[2016.05.08-12.48.04:522][941]LogBlueprintUserMessages: [Marisa_BP_C_15] Hello
+[2016.05.08-12.48.04:722][965]LogBlueprintUserMessages: [Marisa_BP_C_15] Hello
+[2016.05.08-12.48.05:006][999]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.48.05:038][999]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/tes.tes:PersistentLevel' has LevelScriptBlueprint '/Game/tes.tes:PersistentLevel.tes' with GeneratedClass '/Game/tes.tes_C' with ClassGeneratedBy '/Game/tes.tes:PersistentLevel.tes'
+[2016.05.08-12.48.05:092][  0]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.48.06:715][ 73]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.48.12:623][572]BlueprintLog: New page: Marisa_BP をコンパイル
+[2016.05.08-12.48.12:884][572]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.48.12:987][572]BlueprintEditorCompileResults: 情報 [0425.34] Marisa_BP のコンパイルに成功しました！  [ 363 ミリ秒]
+[2016.05.08-12.48.25:712][686]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117 or K2Node_IfThenElse /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117
+[2016.05.08-12.48.25:712][686]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117.EdGraphPin_62790) from referencer (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_InputAction_10.EdGraphPin_62738).  Import failed...
+[2016.05.08-12.48.25:712][686]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_117.EdGraphPin_62790''
+[2016.05.08-12.48.25:712][686]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableSet_286 or K2Node_VariableSet /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_VariableSet_286
+[2016.05.08-12.48.25:712][686]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_VariableSet_286.EdGraphPin_66299) from referencer (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_CreateWidget_8.EdGraphPin_62750).  Import failed...
+[2016.05.08-12.48.25:712][686]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableSet_286.EdGraphPin_66299''
+[2016.05.08-12.48.25:712][686]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableSet_286 or K2Node_VariableSet /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_VariableSet_286
+[2016.05.08-12.48.25:712][686]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_VariableSet_286.EdGraphPin_66297) from referencer (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_CreateWidget_8.EdGraphPin_62748).  Import failed...
+[2016.05.08-12.48.25:712][686]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableSet_286.EdGraphPin_66297''
+[2016.05.08-12.48.25:712][686]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117 or K2Node_IfThenElse /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117
+[2016.05.08-12.48.25:712][686]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117.EdGraphPin_62793) from referencer (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_CreateWidget_8.EdGraphPin_62747).  Import failed...
+[2016.05.08-12.48.25:712][686]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_117.EdGraphPin_62793''
+[2016.05.08-12.48.25:713][686]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/BluePrints/Magics/Tolnade_small_BP.Tolnade_small_BP:EventGraph.K2Node_CallFunction_4082 or K2Node_CallFunction /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_CallFunction_4082
+[2016.05.08-12.48.25:713][686]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/BluePrints/Magics/Tolnade_small_BP.Tolnade_small_BP:EventGraph.K2Node_CallFunction_4082 or K2Node_CallFunction /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CallFunction_4082
+[2016.05.08-12.48.25:713][686]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CallFunction_4082.EdGraphPin_62782) from referencer (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableGet_769.EdGraphPin_66312).  Import failed...
+[2016.05.08-12.48.25:713][686]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_4082.EdGraphPin_62782''
+[2016.05.08-12.48.25:713][686]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117 or K2Node_IfThenElse /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117
+[2016.05.08-12.48.25:713][686]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117.EdGraphPin_62791) from referencer (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_CallFunction_4082.EdGraphPin_62783).  Import failed...
+[2016.05.08-12.48.25:713][686]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_117.EdGraphPin_62791''
+[2016.05.08-12.48.25:718][686]LogBlueprint:Warning: [ButtleGameMode_BP] CreatePinForVariable: 'enventry' variable not found. Base class was probably changed.
+[2016.05.08-12.48.25:718][686]LogBlueprint:Warning: [ButtleGameMode_BP] CreatePinForVariable: 'enventry' variable not found. Base class was probably changed.
+[2016.05.08-12.48.25:718][686]LogBlueprint:Warning: [ButtleGameMode_BP] CreatePinForVariable: 'enventry' variable not found. Base class was probably changed.
+[2016.05.08-12.48.32:007][217]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.05.08-12.48.32:058][217]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.48.32:058][217]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_21) Not registered. Aborting.
+[2016.05.08-12.48.32:059][217]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_22) Not registered. Aborting.
+[2016.05.08-12.48.32:059][217]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_23) Not registered. Aborting.
+[2016.05.08-12.48.32:221][217]BlueprintEditorCompileResults: 情報 [0444.58] ButtleGameMode_BP のコンパイルに成功しました！  [ 214 ミリ秒]
+[2016.05.08-12.48.34:356][384]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.48.35:512][465]BlueprintLog: New page: Marisa_BP をコンパイル
+[2016.05.08-12.48.35:800][465]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_24) Not registered. Aborting.
+[2016.05.08-12.48.35:966][465]BlueprintEditorCompileResults: 情報 [0448.32] Marisa_BP のコンパイルに成功しました！  [ 454 ミリ秒]
+[2016.05.08-12.51.11:938][633]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.51.18:985][301]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.05.08-12.51.19:029][301]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.51.19:029][301]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_25) Not registered. Aborting.
+[2016.05.08-12.51.19:029][301]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_26) Not registered. Aborting.
+[2016.05.08-12.51.19:029][301]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_27) Not registered. Aborting.
+[2016.05.08-12.51.19:142][301]BlueprintEditorCompileResults: 情報 [0611.50] ButtleGameMode_BP のコンパイルに成功しました！  [ 156 ミリ秒]
+[2016.05.08-12.51.21:587][534]BlueprintLog: New page: ButtleGameMode_BP をコンパイル
+[2016.05.08-12.51.21:631][534]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.51.21:766][534]BlueprintEditorCompileResults: 情報 [0614.12] ButtleGameMode_BP のコンパイルに成功しました！  [ 178 ミリ秒]
+[2016.05.08-12.51.23:893][716]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117 or K2Node_IfThenElse /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117
+[2016.05.08-12.51.23:893][716]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117.EdGraphPin_76699) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_InputAction_10.EdGraphPin_76647).  Import failed...
+[2016.05.08-12.51.23:893][716]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_117.EdGraphPin_76699''
+[2016.05.08-12.51.23:894][716]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableSet_286 or K2Node_VariableSet /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_VariableSet_286
+[2016.05.08-12.51.23:894][716]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableSet_286.EdGraphPin_76673) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CreateWidget_8.EdGraphPin_76659).  Import failed...
+[2016.05.08-12.51.23:894][716]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableSet_286.EdGraphPin_76673''
+[2016.05.08-12.51.23:894][716]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableSet /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableSet_286 or K2Node_VariableSet /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_VariableSet_286
+[2016.05.08-12.51.23:894][716]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_VariableSet_286.EdGraphPin_76671) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CreateWidget_8.EdGraphPin_76657).  Import failed...
+[2016.05.08-12.51.23:894][716]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_VariableSet_286.EdGraphPin_76671''
+[2016.05.08-12.51.23:894][716]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117 or K2Node_IfThenElse /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117
+[2016.05.08-12.51.23:894][716]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117.EdGraphPin_76702) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CreateWidget_8.EdGraphPin_76656).  Import failed...
+[2016.05.08-12.51.23:894][716]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_117.EdGraphPin_76702''
+[2016.05.08-12.51.23:894][716]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/BluePrints/Magics/Tolnade_small_BP.Tolnade_small_BP:EventGraph.K2Node_CallFunction_4082 or K2Node_CallFunction /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_CallFunction_4082
+[2016.05.08-12.51.23:894][716]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/BluePrints/Magics/Tolnade_small_BP.Tolnade_small_BP:EventGraph.K2Node_CallFunction_4082 or K2Node_CallFunction /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CallFunction_4082
+[2016.05.08-12.51.23:894][716]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_CallFunction_4082.EdGraphPin_76691) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_VariableGet_769.EdGraphPin_76685).  Import failed...
+[2016.05.08-12.51.23:894][716]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_4082.EdGraphPin_76691''
+[2016.05.08-12.51.23:894][716]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117 or K2Node_IfThenElse /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_IfThenElse_117
+[2016.05.08-12.51.23:894][716]LogProperty:Warning: Illegal TEXT reference to a private object in external package (EdGraphPin /Game/BluePrints/ButtleGameMode_BP.ButtleGameMode_BP:EventGraph.K2Node_IfThenElse_117.EdGraphPin_76700) from referencer (EdGraphPin /Game/BluePrints/Marisa_BP.Marisa_BP:EventGraph.K2Node_CallFunction_4082.EdGraphPin_76692).  Import failed...
+[2016.05.08-12.51.23:894][716]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_117.EdGraphPin_76700''
+[2016.05.08-12.51.23:917][716]LogBlueprint:Warning: [Marisa_BP] CreatePinForVariable: 'enventry' variable not found. Base class was probably changed.
+[2016.05.08-12.51.23:917][716]LogBlueprint:Warning: [Marisa_BP] CreatePinForVariable: 'enventry' variable not found. Base class was probably changed.
+[2016.05.08-12.51.23:917][716]LogBlueprint:Warning: [Marisa_BP] CreatePinForVariable: 'enventry' variable not found. Base class was probably changed.
+[2016.05.08-12.51.25:980][889]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.51.30:640][261]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_28) Not registered. Aborting.
+[2016.05.08-12.51.58:519][599]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_29) Not registered. Aborting.
+[2016.05.08-12.51.58:536][599]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/tes' took 0.017
+[2016.05.08-12.51.58:541][599]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/BluePrints/Marisa_BP] ([1] browsable assets)...
+[2016.05.08-12.51.58:557][599]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/BluePrints/Marisa_BP.Marisa_BP]
+[2016.05.08-12.51.58:557][599]OBJ SavePackage: Finished generating thumbnails for package [/Game/BluePrints/Marisa_BP]
+[2016.05.08-12.51.59:231][599]LogSavePackage: Save=640.29ms
+[2016.05.08-12.51.59:231][599]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Marisa_BP_Auto1D976530640920A3BCE049D889F7B01CA.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Autosaves/Game/BluePrints/Marisa_BP_Auto1.uasset'
+[2016.05.08-12.51.59:232][599]LogSavePackage: Total save time: 673.95ms
+[2016.05.08-12.51.59:232][599]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Autosaves/Game/BluePrints/Marisa_BP_Auto1.uasset
+[2016.05.08-12.51.59:236][599]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BluePrints/ButtleGameMode_BP] ([1] browsable assets)...
+[2016.05.08-12.51.59:236][599]OBJ SavePackage: Finished generating thumbnails for package [/Game/BluePrints/ButtleGameMode_BP]
+[2016.05.08-12.51.59:306][599]LogSavePackage: Save=40.77ms
+[2016.05.08-12.51.59:306][599]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/ButtleGameMode_BP_Auto14264020947F3E9640B7ED6B9BC947989.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Autosaves/Game/BluePrints/ButtleGameMode_BP_Auto1.uasset'
+[2016.05.08-12.51.59:307][599]LogSavePackage: Total save time: 69.56ms
+[2016.05.08-12.51.59:307][599]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Autosaves/Game/BluePrints/ButtleGameMode_BP_Auto1.uasset
+[2016.05.08-12.51.59:310][599]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BluePrints/UMG/Enventry_BP] ([1] browsable assets)...
+[2016.05.08-12.51.59:310][599]OBJ SavePackage: Finished generating thumbnails for package [/Game/BluePrints/UMG/Enventry_BP]
+[2016.05.08-12.51.59:317][599]LogSavePackage: Save=6.39ms
+[2016.05.08-12.51.59:317][599]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Enventry_BP_Auto1E09800924159B8695C568F884F94E924.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Autosaves/Game/BluePrints/UMG/Enventry_BP_Auto1.uasset'
+[2016.05.08-12.51.59:319][599]LogSavePackage: Total save time: 8.19ms
+[2016.05.08-12.51.59:319][599]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Autosaves/Game/BluePrints/UMG/Enventry_BP_Auto1.uasset
+[2016.05.08-12.51.59:319][599]LogFileHelpers: Auto-saving content packages took 0.783
+[2016.05.08-12.51.59:355][601]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.54.18:695][ 20]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 404/400 MB (ok in editor, bad on fixed memory platform)
+[2016.05.08-12.54.20:018][133]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2016.05.08-12.54.20:283][155]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.05.08-12.54.21:336][155]LogSavePackage: Save=39.74ms
+[2016.05.08-12.54.21:336][155]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/ButtleGameMode_BP6A4CA7C842F36CA037B257A133F05488.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/ButtleGameMode_BP.uasset'
+[2016.05.08-12.54.21:339][155]LogSavePackage: Total save time: 68.00ms
+[2016.05.08-12.54.21:339][155]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/ButtleGameMode_BP.uasset
+[2016.05.08-12.54.21:991][155]LogSavePackage: Save=622.19ms
+[2016.05.08-12.54.21:991][155]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Marisa_BP416D43E6414A9053630773942BDB5345.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/Marisa_BP.uasset'
+[2016.05.08-12.54.21:994][155]LogSavePackage: Total save time: 650.17ms
+[2016.05.08-12.54.21:994][155]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/Marisa_BP.uasset
+[2016.05.08-12.54.22:007][155]LogSavePackage: Save=6.19ms
+[2016.05.08-12.54.22:007][155]LogSavePackage: Moving '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Saved/Enventry_BP821B424544A3B2F12EF2328F1161D0F8.tmp' to '../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/UMG/Enventry_BP.uasset'
+[2016.05.08-12.54.22:009][155]LogSavePackage: Total save time: 7.65ms
+[2016.05.08-12.54.22:009][155]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/EllightDunois/Documents/Unreal Projects/MagicDungeon_Project/src/MagicDungeon/Content/BluePrints/UMG/Enventry_BP.uasset
+[2016.05.08-12.54.22:197][155]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.08-12.54.22:198][155]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.08-12.54.22:533][155]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.08-12.54.22:534][155]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.08-12.54.22:714][156]Cmd: QUIT_EDITOR
+[2016.05.08-12.54.23:388][156]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.08-12.54.23:388][156]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.05.08-12.54.23:430][156]LogExit: Preparing to exit.
+[2016.05.08-12.54.24:514][156]LogExit: Editor shut down
+[2016.05.08-12.54.24:515][156]LogExit: Transaction tracking system shut down
+[2016.05.08-12.54.24:644][156]LogObj: Freed 0b from 0 cluster array pools.
+[2016.05.08-12.54.24:644][156]LogExit: Object subsystem successfully closed.
+[2016.05.08-12.54.24:661][156]LogD3D11RHI: Shutdown
+[2016.05.08-12.54.24:661][156]LogD3D11RHI: CleanupD3DDevice
+[2016.05.08-12.54.24:824][156]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.05.08-12.54.24:924][156]LogDerivedDataCache: Shutdown
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (208)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (207)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module SequencerWidgets (206)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module BlueprintGraph (205)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (204)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module CrashTracker (203)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module SuperSearch (202)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module WidgetCarousel (201)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module AddContentDialog (200)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module GameplayTags (199)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module EditorWidgets (198)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module CollectionManager (197)
+[2016.05.08-12.54.24:925][156]LogModuleManager: Shutting down and abandoning module SceneOutliner (196)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module StatsViewer (195)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module FoliageEdit (194)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module LandscapeEditor (193)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module ActorPickerMode (192)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module GeometryMode (191)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module TextureAlignMode (190)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module BspMode (189)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module PlacementMode (188)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module AutomationWorker (187)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module CharacterAI (186)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module SmartSnapping (185)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module ViewportSnapping (184)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module LogVisualizer (183)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (182)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module IntroTutorials (181)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (180)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (179)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (178)
+[2016.05.08-12.54.24:926][156]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (177)
+[2016.05.08-12.54.25:903][156]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (176)
+[2016.05.08-12.54.25:903][156]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (175)
+[2016.05.08-12.54.25:903][156]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (174)
+[2016.05.08-12.54.25:903][156]LogModuleManager: Shutting down and abandoning module MergeActors (173)
+[2016.05.08-12.54.25:903][156]LogModuleManager: Shutting down and abandoning module SizeMap (172)
+[2016.05.08-12.54.25:903][156]LogModuleManager: Shutting down and abandoning module TreeMap (171)
+[2016.05.08-12.54.25:903][156]LogModuleManager: Shutting down and abandoning module ReferenceViewer (170)
+[2016.05.08-12.54.25:903][156]LogModuleManager: Shutting down and abandoning module LocalizationService (169)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (168)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module HardwareTargeting (167)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (166)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module UndoHistory (165)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module UserFeedback (164)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module XmlParser (163)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module Blutility (162)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (161)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (160)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module InputBindingEditor (159)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (158)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module SettingsEditor (157)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module ProjectLauncher (156)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module SessionFrontend (155)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module ProfilerClient (154)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (153)
+[2016.05.08-12.54.25:904][156]LogModuleManager: Shutting down and abandoning module DeviceManager (152)
+[2016.05.08-12.54.25:946][156]LogModuleManager: Shutting down and abandoning module AutomationController (151)
+[2016.05.08-12.54.25:946][156]LogModuleManager: Shutting down and abandoning module AutomationWindow (150)
+[2016.05.08-12.54.25:946][156]LogModuleManager: Shutting down and abandoning module Layers (149)
+[2016.05.08-12.54.25:946][156]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (148)
+[2016.05.08-12.54.25:946][156]LogModuleManager: Shutting down and abandoning module DetailCustomizations (147)
+[2016.05.08-12.54.25:946][156]LogModuleManager: Shutting down and abandoning module PackagesDialog (146)
+[2016.05.08-12.54.25:946][156]LogModuleManager: Shutting down and abandoning module Persona (145)
+[2016.05.08-12.54.25:946][156]LogModuleManager: Shutting down and abandoning module Kismet (144)
+[2016.05.08-12.54.25:946][156]LogModuleManager: Shutting down and abandoning module GraphEditor (143)
+[2016.05.08-12.54.25:946][156]LogModuleManager: Shutting down and abandoning module ClassViewer (142)
+[2016.05.08-12.54.25:947][156]LogModuleManager: Shutting down and abandoning module Toolbox (141)
+[2016.05.08-12.54.25:947][156]LogModuleManager: Shutting down and abandoning module ModuleUI (140)
+[2016.05.08-12.54.25:947][156]LogModuleManager: Shutting down and abandoning module MovieSceneTools (139)
+[2016.05.08-12.54.25:947][156]LogModuleManager: Shutting down and abandoning module OutputLog (138)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module GammaUI (137)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module Documentation (136)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (135)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module AnalyticsET (134)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module Analytics (133)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module PortalServices (132)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module PortalRpc (131)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module MessagingRpc (130)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module AITestSuite (129)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module GameplayDebugger (128)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module AIModule (127)
+[2016.05.08-12.54.25:948][156]LogModuleManager: Shutting down and abandoning module ProfilerService (126)
+[2016.05.08-12.54.26:146][156]LogModuleManager: Shutting down and abandoning module TaskGraph (125)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module SlateRemote (124)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module SteamVRController (123)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module SteamVR (122)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (121)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module OculusLibrary (120)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module OculusInput (119)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (118)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module CableComponent (117)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (116)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (115)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module HTML5Networking (114)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (113)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module PluginBrowser (112)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module EpicSurvey (111)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module DesktopPlatform (110)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (109)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module UObjectPlugin (108)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (107)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (106)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module SourceControl (105)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module GitSourceControl (104)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (103)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (102)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (101)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module MeshPaint (100)
+[2016.05.08-12.54.26:147][156]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.05.08-12.54.26:148][156]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.05.08-12.54.26:148][156]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.05.08-12.54.26:148][156]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (96)
+[2016.05.08-12.54.26:149][156]LogModuleManager: Shutting down and abandoning module AssetRegistry (95)
+[2016.05.08-12.54.26:313][156]LogModuleManager: Shutting down and abandoning module ContentBrowser (94)
+[2016.05.08-12.54.26:313][156]LogModuleManager: Shutting down and abandoning module Paper2DEditor (93)
+[2016.05.08-12.54.26:313][156]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.05.08-12.54.26:414][156]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.05.08-12.54.26:415][156]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.05.08-12.54.26:415][156]LogDerivedDataCache: Shutdown
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.05.08-12.54.26:416][156]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.05.08-12.54.28:418][156]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.05.08-12.54.28:418][156]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.05.08-12.54.28:418][156]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.05.08-12.54.28:419][156]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.05.08-12.54.28:419][156]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.05.08-12.54.28:419][156]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.05.08-12.54.28:419][156]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.05.08-12.54.28:427][156]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.05.08-12.54.28:427][156]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.05.08-12.54.28:427][156]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.05.08-12.54.28:427][156]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.05.08-12.54.28:427][156]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.05.08-12.54.28:427][156]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.05.08-12.54.28:427][156]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.05.08-12.54.28:427][156]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.05.08-12.54.28:427][156]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.05.08-12.54.28:428][156]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.05.08-12.54.28:430][156]LogExit: Exiting.
+[2016.05.08-12.54.28:432][156]Log file closed, 05/08/16 21:54:28
