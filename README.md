@@ -1,4 +1,4 @@
-# MagicDungeon
+# MagicDungeons
 
 魔法使いを操作してダンジョンの最深部にいるボスを倒すアクションRPGです
 
